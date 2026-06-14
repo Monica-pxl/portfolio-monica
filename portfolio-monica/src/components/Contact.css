@@ -1,0 +1,106 @@
+.contact-section {
+  background: linear-gradient(180deg, transparent 0%, rgba(252, 232, 245, 0.42) 100%);
+}
+
+.contact-wrapper {
+  max-width: 680px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-cta {
+  padding: 2.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.contact-cta__text {
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.75;
+  max-width: 460px;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.1rem 1.5rem;
+  text-decoration: none;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.contact-link:hover {
+  transform: translateX(5px);
+  box-shadow: var(--glass-shadow-hover);
+}
+
+.contact-link__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, rgba(252, 232, 245, 0.9), rgba(255, 255, 255, 0.9));
+  border: 1px solid rgba(212, 80, 140, 0.2);
+  border-radius: var(--radius-sm);
+  color: var(--pink-500);
+  flex-shrink: 0;
+}
+
+.contact-link__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  flex: 1;
+}
+
+.contact-link__label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.contact-link__value {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--dark);
+}
+
+.contact-link__arrow {
+  color: var(--pink-400);
+  transition: transform var(--transition);
+  flex-shrink: 0;
+}
+
+.contact-link:hover .contact-link__arrow {
+  transform: translateX(4px);
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  margin-top: 4.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(212, 80, 140, 0.12);
+  font-size: 0.84rem;
+  color: var(--text-muted);
+}
+
+.site-footer span {
+  color: var(--pink-500);
+  font-weight: 500;
+}

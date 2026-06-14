@@ -1,0 +1,266 @@
+/* =============================================
+   PORTFOLIO — MÓNICA MUÑOZ DE LA TORRE
+   Frutiger Aero · Pink × White · Glassmorphism
+   ============================================= */
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* === PINK SCALE === */
+  --pink-50:  #fff0f8;
+  --pink-100: #fce8f5;
+  --pink-200: #f8c8e8;
+  --pink-300: #efa8d0;
+  --pink-400: #e07ab8;
+  --pink-500: #d4508c;
+  --pink-600: #b83870;
+  --pink-700: #9a2858;
+
+  /* === NEUTRALS === */
+  --white:      #ffffff;
+  --dark:       #1e0f1a;
+  --text:       #5c3452;
+  --text-muted: #9e7a92;
+  --text-light: #c4a8bc;
+
+  /* === GLASS === */
+  --glass-bg:          rgba(255, 255, 255, 0.55);
+  --glass-border:      rgba(255, 255, 255, 0.8);
+  --glass-shadow:      0 8px 32px rgba(212, 80, 140, 0.12), 0 2px 8px rgba(0,0,0,0.05);
+  --glass-shadow-hover:0 18px 50px rgba(212, 80, 140, 0.22), 0 4px 18px rgba(0,0,0,0.08);
+
+  /* === GRADIENTS === */
+  --gradient:      linear-gradient(135deg, #e07ab8 0%, #d4508c 100%);
+  --gradient-deep: linear-gradient(135deg, #d4508c 0%, #9a2858 100%);
+  --gradient-soft: linear-gradient(135deg, #fce8f5 0%, #fff5fb 100%);
+  --gradient-bg:   linear-gradient(160deg, #fce9f5 0%, #fff5fb 38%, #fde4f1 68%, #fff0f8 100%);
+
+  /* === LAYOUT === */
+  --max-width:      1100px;
+  --nav-height:     68px;
+  --section-padding:6rem 1.5rem;
+  --radius:         20px;
+  --radius-sm:      10px;
+  --radius-xs:      6px;
+  --radius-full:    9999px;
+
+  /* === TYPOGRAPHY === */
+  --font:         'Inter', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Poppins', system-ui, -apple-system, sans-serif;
+
+  /* === ANIMATION === */
+  --ease:           cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --transition:     0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --transition-slow:0.38s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  /* Legacy shadow (unused by new components) */
+  --shadow: none;
+
+}
+
+/* ===== BASE ===== */
+body {
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--text);
+  background: var(--gradient-bg);
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Frutiger Aero background blobs */
+body::before {
+  content: '';
+  position: fixed;
+  top: -15vw;
+  left: -10vw;
+  width: 55vw;
+  height: 55vw;
+  background: radial-gradient(circle, rgba(224, 122, 184, 0.18) 0%, transparent 65%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  bottom: -10vw;
+  right: -10vw;
+  width: 50vw;
+  height: 50vw;
+  background: radial-gradient(circle, rgba(212, 80, 140, 0.14) 0%, transparent 65%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-heading);
+  color: var(--dark);
+  line-height: 1.2;
+}
+
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+ul { list-style: none; padding: 0; margin: 0; }
+button { cursor: pointer; border: none; font-family: var(--font); }
+
+/* ===== LAYOUT ===== */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section {
+  padding: var(--section-padding);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--dark);
+}
+
+.section-title span {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-subtitle {
+  font-size: 0.98rem;
+  color: var(--text-muted);
+}
+
+/* ===== GLASS CARD ===== */
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius);
+  box-shadow: var(--glass-shadow);
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.75rem 1.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.94rem;
+  font-weight: 500;
+  font-family: var(--font);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+}
+
+/* Glossy aero shine overlay */
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 46%;
+  background: linear-gradient(180deg, rgba(255,255,255,0.32) 0%, transparent 100%);
+  border-radius: var(--radius-full) var(--radius-full) 50% 50%;
+  pointer-events: none;
+}
+
+.btn-primary {
+  background: var(--gradient);
+  color: white;
+  box-shadow: 0 4px 18px rgba(212, 80, 140, 0.45), inset 0 1px 0 rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.18);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(212, 80, 140, 0.55), inset 0 1px 0 rgba(255,255,255,0.2);
+}
+
+.btn-outline {
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--pink-500);
+  border: 1.5px solid rgba(212, 80, 140, 0.32);
+  box-shadow: 0 2px 12px rgba(212, 80, 140, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.92);
+  border-color: var(--pink-500);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(212, 80, 140, 0.18);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1.5px solid rgba(158, 122, 146, 0.28);
+}
+
+.btn-ghost:hover {
+  color: var(--pink-500);
+  border-color: var(--pink-300);
+  background: rgba(212, 80, 140, 0.06);
+}
+
+/* ===== TECH BADGE ===== */
+.tech-badge {
+  display: inline-block;
+  padding: 0.28rem 0.75rem;
+  background: linear-gradient(135deg, rgba(212, 80, 140, 0.12), rgba(224, 122, 184, 0.08));
+  border: 1px solid rgba(212, 80, 140, 0.2);
+  border-radius: var(--radius-full);
+  font-size: 0.77rem;
+  font-weight: 500;
+  color: var(--pink-600);
+}
+
+/* ===== SHARED KEYFRAMES ===== */
+@keyframes orb-float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-22px) rotate(4deg); }
+}
+
+@keyframes ring-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--pink-50); }
+::-webkit-scrollbar-thumb { background: var(--pink-300); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--pink-500); }
