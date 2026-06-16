@@ -19,7 +19,7 @@ const LEARNINGS: Learning[] = [
     ),
     title: 'Desarrollo Web Full Stack',
     description:
-      'Aprendí a construir aplicaciones completas de principio a fin: interfaces con HTML, CSS, Angular y React en el frontend, y lógica de servidor con Symfony y Java en el backend.',
+      'Construí aplicaciones completas con Angular y React en frontend, y Symfony y Java en backend.',
     tags: ['HTML', 'CSS', 'Angular', 'React', 'Symfony', 'Java'],
   },
   {
@@ -32,7 +32,7 @@ const LEARNINGS: Learning[] = [
     ),
     title: 'Bases de datos relacionales',
     description:
-      'Diseño y consulta de bases de datos con MySQL, modelado de entidades y relaciones, y uso de Doctrine ORM para trabajar con datos directamente desde el código.',
+      'Diseño y consulta de MySQL, modelado de entidades y relaciones, y uso de Doctrine ORM.',
     tags: ['MySQL', 'Doctrine ORM', 'Modelado de datos'],
   },
   {
@@ -44,7 +44,7 @@ const LEARNINGS: Learning[] = [
     ),
     title: 'Entorno profesional real',
     description:
-      'En mis prácticas en SendingBay desarrollé funcionalidades reales en remoto, siguiendo procesos y estándares de un equipo profesional con Symfony, Composer y XAMPP.',
+      'En prácticas en SendingBay desarrollé funcionalidades reales en remoto siguiendo estándares de equipo.',
     tags: ['Symfony', 'XAMPP', 'Composer', 'Trabajo en equipo'],
   },
   {
@@ -55,7 +55,7 @@ const LEARNINGS: Learning[] = [
     ),
     title: 'Sistemas y redes',
     description:
-      'Durante el ciclo de SMR aprendí a instalar, configurar y mantener equipos y redes locales, así como a manejar comandos Linux y gestionar sistemas informáticos.',
+      'Instalación, configuración y mantenimiento de equipos y redes locales, con manejo de comandos Linux.',
     tags: ['Linux', 'Redes locales', 'Montaje de equipos'],
   },
   {
@@ -69,7 +69,7 @@ const LEARNINGS: Learning[] = [
     ),
     title: 'Herramientas colaborativas',
     description:
-      'Control de versiones con Git y GitHub, y uso de entornos de desarrollo como VS Code e IntelliJ IDEA para trabajar de forma ordenada y eficiente en proyectos.',
+      'Control de versiones con Git y GitHub, y flujos de trabajo con VS Code e IntelliJ IDEA.',
     tags: ['Git', 'GitHub', 'VS Code', 'IntelliJ IDEA'],
   },
   {
@@ -82,7 +82,7 @@ const LEARNINGS: Learning[] = [
     ),
     title: 'Diseño e interfaz de usuario',
     description:
-      'Creación de interfaces responsivas y accesibles prestando atención a la experiencia de usuario, utilizando Bootstrap, CSS personalizado y buenas prácticas de diseño web.',
+      'Interfaces responsivas y accesibles con Bootstrap, CSS personalizado y buenas prácticas UX.',
     tags: ['Bootstrap', 'CSS', 'Responsive', 'UX'],
   },
 ];

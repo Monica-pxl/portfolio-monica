@@ -1,7 +1,7 @@
 import './Hero.css';
 
 // Para añadir tu foto: cambia PHOTO_SRC por la ruta a tu imagen, p.ej. '/foto-monica.jpg'
-const PHOTO_SRC = ''; // déjalo vacío mientras no tengas foto
+const PHOTO_SRC = '/monica.png'; // déjalo vacío mientras no tengas foto
 
 export default function Hero() {
   return (
@@ -68,7 +68,19 @@ export default function Hero() {
                 <polyline points="7 10 12 15 17 10" />
                 <line x1="12" y1="15" x2="12" y2="3" />
               </svg>
-              Descargar CV
+              CV Español
+            </a>
+            <a
+              href="/cv-monica-en.pdf"
+              download="CV-Monica-Munoz-EN.pdf"
+              className="btn btn-outline"
+            >
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              CV English
             </a>
           </div>
 
