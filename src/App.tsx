@@ -1,3 +1,4 @@
+import { ThemeProvider } from './ThemeContext';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
@@ -9,7 +10,7 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <>
+    <ThemeProvider>
       <Navbar />
       <main>
         <Hero />
@@ -20,7 +21,7 @@ function App() {
         <Learned />
         <Contact />
       </main>
-    </>
+    </ThemeProvider>
   );
 }
 

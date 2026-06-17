@@ -1,18 +1,52 @@
-.skill-groups {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.5rem;
+/* =============================================
+   SKILLS SECTION — diseño distintivo
+   ============================================= */
+
+/* Fondo propio de la sección con glow central */
+.skills-section {
+  position: relative;
+  overflow: hidden;
 }
 
-/* Card base: quitamos el padding uniforme para controlar header y body por separado */
+.skills-section::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 60%;
+  background: radial-gradient(ellipse, rgba(212, 80, 140, 0.08) 0%, transparent 68%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.skills-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Grid bento: 2 columnas, último solo si queda impar ── */
+.skill-groups {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.4rem;
+}
+
+/* El último card solo si ocupa fila propia (impar en grid de 2) */
+.skill-group:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
+/* ── Card base ── */
 .skill-group {
   padding: 0;
   overflow: hidden;
   position: relative;
-  transition: transform var(--transition), box-shadow var(--transition);
+  transition: transform var(--transition-slow), box-shadow var(--transition-slow);
 }
 
-/* Barra de acento superior con gradiente */
+/* Línea de acento superior con glow on hover */
 .skill-group::before {
   content: '';
   position: absolute;
@@ -21,6 +55,7 @@
   background: var(--gradient);
   border-radius: var(--radius-xs) var(--radius-xs) 0 0;
   z-index: 1;
+  transition: filter var(--transition-slow);
 }
 
 .skill-group:hover {
@@ -28,78 +63,77 @@
   box-shadow: var(--glass-shadow-hover);
 }
 
-/* Cabecera de categoría con fondo suave */
+.skill-group:hover::before {
+  filter: drop-shadow(0 0 5px rgba(212, 80, 140, 0.55));
+}
+
+/* ── Header de categoría ── */
 .skill-group__header {
   display: flex;
   align-items: center;
-  gap: 0.9rem;
-  padding: 1.4rem 1.5rem 1.1rem;
-  background: linear-gradient(135deg, rgba(252, 232, 245, 0.5) 0%, rgba(255, 245, 251, 0.2) 100%);
+  gap: 1rem;
+  padding: 1.4rem 1.6rem 1.2rem;
+  background: linear-gradient(135deg, rgba(252, 232, 245, 0.48) 0%, rgba(255, 245, 251, 0.16) 100%);
   border-bottom: 1px solid rgba(212, 80, 140, 0.1);
-  margin-bottom: 0;
 }
 
 .skill-group__icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   background: var(--gradient);
   color: white;
-  border-radius: 10px;
+  border-radius: 12px;
   font-size: 1rem;
   font-weight: 700;
   font-family: var(--font-heading);
   flex-shrink: 0;
-  box-shadow:
-    0 4px 12px rgba(212, 80, 140, 0.38),
-    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 14px rgba(212, 80, 140, 0.42), inset 0 1px 0 rgba(255, 255, 255, 0.25);
   position: relative;
   overflow: hidden;
 }
 
-.skill-group__icon::before {
+.skill-group__icon::after {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0;
   height: 48%;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.28) 0%, transparent 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, transparent 100%);
   pointer-events: none;
 }
 
 .skill-group__title {
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 700;
   color: var(--dark);
   letter-spacing: -0.2px;
 }
 
-/* Pills dentro del body del card */
+/* ── Pills ── */
 .skill-group__pills {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.45rem;
-  padding: 1.2rem 1.5rem 1.4rem;
+  gap: 0.5rem;
+  padding: 1.25rem 1.6rem 1.5rem;
 }
 
 .skill-pill {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
-  padding: 0.35rem 0.85rem;
-  background: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(212, 80, 140, 0.18);
+  gap: 0.38rem;
+  padding: 0.38rem 0.9rem;
+  background: linear-gradient(135deg, rgba(212, 80, 140, 0.07), rgba(224, 122, 184, 0.05));
+  border: 1px solid rgba(212, 80, 140, 0.22);
   border-radius: var(--radius-full);
-  font-size: 0.81rem;
+  font-size: 0.8rem;
   font-weight: 500;
-  color: var(--text);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  color: var(--pink-700);
   transition: all var(--transition);
+  cursor: default;
 }
 
-/* Dot de acento antes de cada pill */
 .skill-pill::before {
   content: '';
   width: 5px;
@@ -108,17 +142,58 @@
   border-radius: 50%;
   flex-shrink: 0;
   opacity: 0.7;
-  transition: opacity var(--transition);
+  transition: opacity var(--transition), transform var(--transition);
 }
 
 .skill-pill:hover {
-  background: rgba(212, 80, 140, 0.09);
+  background: linear-gradient(135deg, rgba(212, 80, 140, 0.14), rgba(224, 122, 184, 0.1));
   border-color: var(--pink-400);
   color: var(--pink-600);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(212, 80, 140, 0.15);
+  box-shadow: 0 4px 14px rgba(212, 80, 140, 0.18);
 }
 
 .skill-pill:hover::before {
   opacity: 1;
+  transform: scale(1.3);
+}
+
+/* ── Dark mode ── */
+[data-theme="dark"] .skills-section::before {
+  background: radial-gradient(ellipse, rgba(212, 80, 140, 0.07) 0%, transparent 68%);
+}
+
+[data-theme="dark"] .skill-group__header {
+  background: linear-gradient(135deg, rgba(40, 12, 30, 0.65) 0%, rgba(22, 8, 18, 0.3) 100%);
+  border-bottom-color: rgba(212, 80, 140, 0.14);
+}
+
+[data-theme="dark"] .skill-pill {
+  background: linear-gradient(135deg, rgba(212, 80, 140, 0.13), rgba(180, 56, 112, 0.07));
+  border-color: rgba(212, 80, 140, 0.3);
+  color: var(--pink-200, #f8c8e8);
+}
+
+[data-theme="dark"] .skill-pill:hover {
+  background: linear-gradient(135deg, rgba(212, 80, 140, 0.24), rgba(180, 56, 112, 0.16));
+  border-color: var(--pink-400);
+  color: var(--pink-100, #fce8f5);
+  box-shadow: 0 4px 14px rgba(212, 80, 140, 0.22);
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .skill-groups {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-group:last-child:nth-child(odd) {
+    grid-column: span 1;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 900px) {
+  .skill-groups {
+    grid-template-columns: 1fr 1fr;
+  }
 }

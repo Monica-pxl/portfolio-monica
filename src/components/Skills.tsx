@@ -36,7 +36,7 @@ const SKILL_GROUPS: SkillGroup[] = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="section">
+    <section id="skills" className="section skills-section">
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">

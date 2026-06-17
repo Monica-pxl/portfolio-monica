@@ -66,6 +66,97 @@ html {
 
 }
 
+/* ======================================================
+   DARK MODE — variables y overrides
+   ====================================================== */
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  /* Neutrals invertidos */
+  --dark:       #f9edf6;
+  --text:       #d4b0c8;
+  --text-muted: #9e7a92;
+  --text-light: #5a3a52;
+
+  /* Glass oscuro */
+  --glass-bg:           rgba(22, 8, 18, 0.70);
+  --glass-border:       rgba(212, 80, 140, 0.20);
+  --glass-shadow:       0 8px 32px rgba(0, 0, 0, 0.5), 0 2px 8px rgba(212, 80, 140, 0.08);
+  --glass-shadow-hover: 0 18px 50px rgba(0, 0, 0, 0.6), 0 4px 18px rgba(212, 80, 140, 0.16);
+
+  /* Gradientes de fondo oscuro (mantiene la esencia violeta-rosa) */
+  --gradient-bg:   linear-gradient(160deg, #1c0a17 0%, #0f0810 38%, #1a0c16 68%, #0f0810 100%);
+  --gradient-soft: linear-gradient(135deg, #2d1428 0%, #1e0f1a 100%);
+}
+
+[data-theme="dark"] body {
+  color: var(--text);
+  background: var(--gradient-bg);
+}
+
+[data-theme="dark"] body::before {
+  background: radial-gradient(circle, rgba(212, 80, 140, 0.10) 0%, transparent 65%);
+}
+
+[data-theme="dark"] body::after {
+  background: radial-gradient(circle, rgba(180, 56, 112, 0.08) 0%, transparent 65%);
+}
+
+/* Headings */
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5 {
+  color: var(--dark);
+}
+
+/* Btn outline en dark */
+[data-theme="dark"] .btn-outline {
+  background: rgba(30, 10, 26, 0.72);
+  border-color: rgba(212, 80, 140, 0.38);
+}
+
+[data-theme="dark"] .btn-outline:hover {
+  background: rgba(45, 15, 38, 0.9);
+}
+
+[data-theme="dark"] .btn-ghost {
+  border-color: rgba(212, 80, 140, 0.25);
+}
+
+/* Tech badge */
+[data-theme="dark"] .tech-badge {
+  background: linear-gradient(135deg, rgba(212, 80, 140, 0.18), rgba(224, 122, 184, 0.10));
+  border-color: rgba(212, 80, 140, 0.28);
+}
+
+/* Sections con fondo hardcodeado */
+[data-theme="dark"] .about-section {
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(40, 10, 30, 0.4) 50%,
+    transparent 100%
+  );
+}
+
+[data-theme="dark"] .contact-section {
+  background: linear-gradient(180deg, transparent 0%, rgba(30, 8, 22, 0.45) 100%);
+}
+
+/* Contact link icon */
+[data-theme="dark"] .contact-link__icon {
+  background: linear-gradient(135deg, rgba(40, 12, 32, 0.9), rgba(30, 10, 26, 0.9));
+  border-color: rgba(212, 80, 140, 0.22);
+}
+
+/* Project card icon */
+[data-theme="dark"] .project-card__icon {
+  background: linear-gradient(135deg, rgba(212, 80, 140, 0.18), rgba(224, 122, 184, 0.12));
+  border-color: rgba(212, 80, 140, 0.28);
+}
+
 /* ===== BASE ===== */
 body {
   font-family: var(--font);
