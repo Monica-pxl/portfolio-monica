@@ -4,9 +4,9 @@ import './Navbar.css';
 
 const NAV_LINKS = [
   { label: 'Inicio', href: '#hero' },
-  { label: 'Proyectos', href: '#projects' },
   { label: 'Sobre mí', href: '#about' },
   { label: 'Skills', href: '#skills' },
+  { label: 'Proyectos', href: '#projects' },
   { label: 'Experiencia', href: '#experience' },
   { label: 'Conocimientos prácticos', href: '#learned' },
   { label: 'Contacto', href: '#contact' },
