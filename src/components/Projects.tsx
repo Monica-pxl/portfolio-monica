@@ -18,7 +18,7 @@ const PROJECTS: Project[] = [
     subtitle: 'TFG — Gestión de peluquerías',
     description:
       'Aplicación web full stack para gestión de citas en peluquerías multicentro. Incluye sistema de autenticación con JWT, gestión de roles diferenciados, reservas online y una API REST completa.',
-    tags: ['Angular', 'Node.js', 'Express', 'MongoDB', 'JWT'],
+    tags: ['Angular', 'Node.js', 'Express', 'MongoDB', 'JWT', 'TypeScript'],
     features: ['Autenticación y roles', 'Reservas online', 'API REST', 'Multi-centro'],
     github: 'https://github.com/Monica-pxl/tfg-peluqueria-monica-munoz-mean',
     demo: 'https://hairgest-angular.vercel.app/',

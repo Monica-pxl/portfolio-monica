@@ -112,6 +112,36 @@
   letter-spacing: 0.3px;
 }
 
+.hero__location {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.2px;
+}
+
+.hero__location-icon {
+  flex-shrink: 0;
+  color: var(--pink-500);
+}
+
+[data-theme="dark"] .hero__location {
+  color: var(--text-muted);
+}
+
+[data-theme="dark"] .hero__location-icon {
+  color: var(--pink-400);
+}
+
+[data-theme="dark"] .hero__badge {
+  background: rgba(28, 8, 22, 0.85);
+  border-color: rgba(212, 80, 140, 0.42);
+  color: var(--pink-300);
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.35);
+}
+
 .hero__description {
   max-width: 520px;
   font-size: 1.05rem;
@@ -152,12 +182,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 2rem;
 }
 
 .hero__photo-frame {
   position: relative;
-  width: clamp(200px, 20vw, 290px);
-  height: clamp(260px, 26vw, 370px);
+  width: clamp(220px, 22vw, 325px);
+  height: clamp(285px, 28vw, 415px);
   border-radius: 50% 50% 20px 20px / 50% 50% 20px 20px;
   overflow: hidden;
   background: var(--gradient-soft);
@@ -258,7 +289,7 @@
   }
 
   .hero__photo-wrap {
-    order: -1;
+    margin-left: 0;
   }
 
   .hero__photo-frame {
@@ -269,10 +300,6 @@
 }
 
 @media (max-width: 600px) {
-  .hero__photo-wrap {
-    display: none;
-  }
-
   .hero__actions {
     flex-direction: column;
     align-items: flex-start;

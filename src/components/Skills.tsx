@@ -20,17 +20,17 @@ const SKILL_GROUPS: SkillGroup[] = [
   {
     category: 'Backend & Frameworks',
     icon: '⬡',
-    skills: ['Node.js', 'Express', 'Symfony', 'Doctrine ORM', 'Composer'],
+    skills: ['Node.js', 'Express', 'JWT Authentication', 'Symfony', 'Doctrine ORM', 'Composer'],
   },
   {
     category: 'Bases de datos',
     icon: '◭',
-    skills: ['MySQL', 'MongoDB', 'MySQL Workbench', 'XAMPP'],
+    skills: ['MySQL', 'MongoDB'],
   },
   {
     category: 'Herramientas',
     icon: '⌘',
-    skills: ['Git', 'VS Code', 'IntelliJ IDEA', 'Visual Studio', 'WordPress', 'Canva'],
+    skills: ['Git', 'GitHub', 'VS Code', 'IntelliJ IDEA', 'Visual Studio', 'WordPress', 'Canva', 'XAMPP', 'MySQL Workbench'],
   },
 ];
 

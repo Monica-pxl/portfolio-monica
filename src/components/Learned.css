@@ -50,7 +50,7 @@
 
 .learned-card__description {
   font-size: 0.875rem;
-  color: var(--text-muted);
+  color: var(--text);
   line-height: 1.6;
   flex: 1;
 }

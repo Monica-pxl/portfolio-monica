@@ -18,8 +18,8 @@ const EXPERIENCES: Experience[] = [
     period: 'mar. 2026 – may. 2026',
     type: 'Contrato de formación · En remoto',
     description:
-      'Desarrollo y mantenimiento de aplicaciones web en entorno de logística, colaborando en tareas de soporte, actualización de funcionalidades y gestión de contenido dentro del equipo técnico.',
-    tags: ['JavaScript / TypeScript', 'Node.js', 'Full Stack', 'Git', 'React.js'],
+      'Participación en el desarrollo y mantenimiento de aplicaciones web en un entorno de logística, colaborando con el equipo técnico en tareas de soporte, actualización de funcionalidades y gestión de contenido.',
+    tags: ['Node.js', 'TypeScript', 'React', 'Git'],
   },
   {
     id: 'exp2',
@@ -29,7 +29,7 @@ const EXPERIENCES: Experience[] = [
     type: 'Proyecto académico',
     description:
       'Aplicación web full stack para gestión de citas en centros de peluquería multicentro. Incluye autenticación JWT, sistema de roles y gestión de reservas en tiempo real.',
-    tags: ['Angular', 'Node.js', 'Express', 'MongoDB', 'JavaScript / TypeScript','JWT', 'API REST', 'Full Stack'],
+    tags: ['Angular', 'Node.js', 'Express', 'MongoDB', 'JWT', 'TypeScript'],
   },
   {
     id: 'exp3',
@@ -48,8 +48,8 @@ const EXPERIENCES: Experience[] = [
     period: 'abr. 2024 – jun. 2024',
     type: 'Contrato de formación · Híbrido',
     description:
-      'Creación y mantenimiento de páginas web corporativas con WordPress y herramientas de diseño básico.',
-    tags: ['WordPress', 'Diseño web', 'Canva'],
+      'Apoyo en proyectos web corporativos en el sector de diseño de interiores, adaptando contenido y realizando ajustes básicos de diseño con WordPress y herramientas visuales.',
+    tags: ['WordPress', 'Canva', 'Diseño web'],
   },
 ];
 
