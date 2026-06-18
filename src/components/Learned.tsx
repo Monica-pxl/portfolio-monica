@@ -93,7 +93,7 @@ export default function Learned() {
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">
-            Qué he <span>aprendido</span>
+            Conocimientos <span>prácticos</span>
           </h2>
           <p className="section-subtitle">
             Reflexiones y aprendizajes clave a lo largo de mi formación y experiencia
