@@ -1,12 +1,10 @@
+import { useLanguage } from '../LanguageContext';
+import { translations } from '../translations';
 import './Projects.css';
 
 interface Project {
   id: string;
-  title: string;
-  subtitle: string;
-  description: string;
   tags: string[];
-  features: string[];
   github: string;
   demo: string | null;
 }
@@ -14,23 +12,13 @@ interface Project {
 const PROJECTS: Project[] = [
   {
     id: 'hairgest',
-    title: 'HairGest',
-    subtitle: 'TFG — Gestión de peluquerías',
-    description:
-      'Aplicación web full stack para gestión de citas en peluquerías multicentro. Incluye sistema de autenticación con JWT, gestión de roles diferenciados, reservas online y una API REST completa.',
     tags: ['Angular', 'Node.js', 'Express', 'MongoDB', 'JWT', 'TypeScript'],
-    features: ['Autenticación y roles', 'Reservas online', 'API REST', 'Multi-centro'],
     github: 'https://github.com/Monica-pxl/tfg-peluqueria-monica-munoz-mean',
     demo: 'https://hairgest-angular.vercel.app/',
   },
   {
     id: 'gallery',
-    title: 'Galería Interactiva',
-    subtitle: 'SPA · React + TypeScript',
-    description:
-      'Single Page Application con gestión de tarjetas fotográficas. Permite agregar, editar y eliminar imágenes, dar likes, reordenarlas con drag & drop y alternar entre modo claro y oscuro.',
     tags: ['React', 'TypeScript', 'Vite', 'CSS'],
-    features: ['CRUD completo', 'Likes', 'Drag & drop', 'Modo oscuro'],
     github: 'https://github.com/Monica-pxl/Proyecto-React-Monica-Munoz',
     demo: null,
   },
@@ -62,35 +50,38 @@ function GithubIcon() {
 }
 
 export default function Projects() {
+  const { language } = useLanguage();
+  const t = translations[language].projects;
+
   return (
     <section id="projects" className="section">
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">
-            Mis <span>proyectos</span>
+            {t.title} <span>{t.titleSpan}</span>
           </h2>
-          <p className="section-subtitle">
-            Proyectos académicos y personales que reflejan mis habilidades
-          </p>
+          <p className="section-subtitle">{t.subtitle}</p>
         </div>
 
         <div className="projects-grid">
-          {PROJECTS.map((project) => (
+          {PROJECTS.map((project) => {
+            const tProject = t.items.find(i => i.id === project.id)!;
+            return (
             <article key={project.id} className="project-card glass-card">
               <div className="project-card__header">
                 <div className="project-card__icon">
                   <CodeIcon />
                 </div>
                 <div>
-                  <h3 className="project-card__title">{project.title}</h3>
-                  <p className="project-card__subtitle">{project.subtitle}</p>
+                  <h3 className="project-card__title">{tProject.title}</h3>
+                  <p className="project-card__subtitle">{tProject.subtitle}</p>
                 </div>
               </div>
 
-              <p className="project-card__description">{project.description}</p>
+              <p className="project-card__description">{tProject.description}</p>
 
               <ul className="project-card__features">
-                {project.features.map((f) => (
+                {tProject.features.map((f) => (
                   <li key={f}>
                     <CheckIcon />
                     {f}
@@ -123,16 +114,17 @@ export default function Projects() {
                     rel="noopener noreferrer"
                     className="btn btn-primary btn--sm"
                   >
-                    Demo
+                    {t.demo}
                   </a>
                 ) : (
                   <span className="btn btn-ghost btn--sm btn--disabled">
-                    Demo próximamente
+                    {language === 'es' ? 'Demo próximamente' : 'Demo coming soon'}
                   </span>
                 )}
               </div>
             </article>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

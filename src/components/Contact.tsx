@@ -1,3 +1,5 @@
+import { useLanguage } from '../LanguageContext';
+import { translations } from '../translations';
 import './Contact.css';
 
 const LINKS = [
@@ -38,31 +40,28 @@ const LINKS = [
 ];
 
 export default function Contact() {
+  const { language } = useLanguage();
+  const t = translations[language].contact;
+
   return (
     <section id="contact" className="section contact-section">
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">
-            Hablemos <span>:)</span>
+            {t.title} <span>{t.titleSpan}</span>
           </h2>
-          <p className="section-subtitle">
-            Estoy abierta a nuevas oportunidades, colaboraciones o simplemente tener una
-            buena conversación
-          </p>
+          <p className="section-subtitle">{t.subtitle}</p>
         </div>
 
         <div className="contact-wrapper">
           <div className="contact-cta glass-card">
-            <p className="contact-cta__text">
-              Si buscas una desarrolladora junior con ganas de aprender y crecer, o tienes
-              alguna propuesta, no dudes en escribirme.
-            </p>
+            <p className="contact-cta__text">{t.ctaText}</p>
             <a href="mailto:monimunoztorre@gmail.com" className="btn btn-primary">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                 <polyline points="22,6 12,13 2,6" />
               </svg>
-              Envíame un email
+              {t.btnEmail}
             </a>
           </div>
 
@@ -98,7 +97,7 @@ export default function Contact() {
 
         <footer className="site-footer">
           <p>
-            Diseñado y desarrollado por{' '}
+            {language === 'es' ? 'Diseñado y desarrollado por' : 'Designed and developed by'}{' '}
             <span>Mónica Muñoz de la Torre</span> · 2026
           </p>
         </footer>

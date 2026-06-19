@@ -1,53 +1,46 @@
+import { useLanguage } from '../LanguageContext';
+import { translations } from '../translations';
 import './About.css';
 
 export default function About() {
+  const { language } = useLanguage();
+  const t = translations[language].about;
+
   return (
     <section id="about" className="section about-section">
       <div className="container">
         <div className="about-layout">
           <div className="about-text">
             <h2 className="section-title">
-              Sobre <span>mí</span>
+              {t.title} <span>{t.titleSpan}</span>
             </h2>
 
             <div className="about-intro">
-              <p>
-                Soy <strong>Mónica Muñoz de la Torre</strong>, estudiante de Técnico
-                Superior en Desarrollo de Aplicaciones Web (DAW). Antes completé el ciclo
-                de Sistemas Microinformáticos y Redes (SMR), lo que me dio una base sólida
-                en infraestructura y redes.
-              </p>
-              <p>
-                Me apasiona el desarrollo frontend y full stack. He trabajado en proyectos
-                reales durante prácticas en empresa y a lo largo de mi formación, donde he
-                aplicado tecnologías modernas y aprendido a trabajar de forma profesional.
-              </p>
-              <p>
-                Busco oportunidades donde pueda seguir creciendo, aportar energía y
-                curiosidad, y desarrollarme como profesional en el mundo del desarrollo web.
-              </p>
+              <p dangerouslySetInnerHTML={{ __html: t.p1 }} />
+              <p>{t.p2}</p>
+              <p>{t.p3}</p>
             </div>
 
             <div className="about-highlights">
               <div className="highlight-card glass-card">
                 <span className="highlight-card__icon">🎓</span>
                 <div>
-                  <strong>DAW</strong>
-                  <span>Técnico Superior en Desarrollo de Aplicaciones Web</span>
+                  <strong>{t.card1Title}</strong>
+                  <span>{t.card1Sub}</span>
                 </div>
               </div>
               <div className="highlight-card glass-card">
                 <span className="highlight-card__icon">🖥️</span>
                 <div>
-                  <strong>SMR</strong>
-                  <span>Sistemas Microinformáticos y Redes</span>
+                  <strong>{t.card2Title}</strong>
+                  <span>{t.card2Sub}</span>
                 </div>
               </div>
               <div className="highlight-card glass-card">
                 <span className="highlight-card__icon">🌐</span>
                 <div>
-                  <strong>Full Stack & Frontend</strong>
-                  <span>Proyectos académicos y prácticas en empresa</span>
+                  <strong>{t.card3Title}</strong>
+                  <span>{t.card3Sub}</span>
                 </div>
               </div>
             </div>
@@ -70,7 +63,7 @@ export default function About() {
 
               <div className="about-stat about-stat--1">
                 <span className="about-stat__value">2</span>
-                <span>proyectos</span>
+                <span>{t.statProjects}</span>
               </div>
               <div className="about-stat about-stat--2">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">

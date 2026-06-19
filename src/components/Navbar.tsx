@@ -1,21 +1,15 @@
 import { useState, useEffect } from 'react';
 import { useTheme } from '../ThemeContext';
+import { useLanguage } from '../LanguageContext';
+import { translations } from '../translations';
 import './Navbar.css';
-
-const NAV_LINKS = [
-  { label: 'Inicio', href: '#hero' },
-  { label: 'Sobre mí', href: '#about' },
-  { label: 'Skills', href: '#skills' },
-  { label: 'Proyectos', href: '#projects' },
-  { label: 'Experiencia', href: '#experience' },
-  { label: 'Conocimientos prácticos', href: '#learned' },
-  { label: 'Contacto', href: '#contact' },
-];
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const { theme, toggleTheme } = useTheme();
+  const { language, toggleLanguage } = useLanguage();
+  const t = translations[language].navbar;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 30);
@@ -31,7 +25,7 @@ export default function Navbar() {
         </a>
 
         <ul className={`navbar__links${menuOpen ? ' navbar__links--open' : ''}`}>
-          {NAV_LINKS.map(({ label, href }) => (
+          {t.links.map(({ label, href }) => (
             <li key={href}>
               <a href={href} onClick={() => setMenuOpen(false)}>
                 {label}
@@ -42,10 +36,18 @@ export default function Navbar() {
 
         <div className="navbar__actions">
           <button
+            className="navbar__lang-toggle"
+            onClick={toggleLanguage}
+            aria-label={language === 'es' ? 'Switch to English' : 'Cambiar a Español'}
+            title={language === 'es' ? 'English' : 'Español'}
+          >
+            {language === 'es' ? 'EN' : 'ES'}
+          </button>
+          <button
             className="navbar__theme-toggle"
             onClick={toggleTheme}
-            aria-label={theme === 'light' ? 'Activar modo oscuro' : 'Activar modo claro'}
-            title={theme === 'light' ? 'Modo oscuro' : 'Modo claro'}
+            aria-label={theme === 'light' ? t.toggleDark : t.toggleLight}
+            title={theme === 'light' ? t.modoDark : t.modoLight}
           >
             {theme === 'light' ? (
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -69,7 +71,7 @@ export default function Navbar() {
           <button
             className={`navbar__burger${menuOpen ? ' navbar__burger--open' : ''}`}
             onClick={() => setMenuOpen((v) => !v)}
-            aria-label="Abrir menú"
+            aria-label={t.openMenu}
             aria-expanded={menuOpen}
           >
             <span />

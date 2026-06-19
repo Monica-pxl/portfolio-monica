@@ -1,9 +1,14 @@
+import { useLanguage } from '../LanguageContext';
+import { translations } from '../translations';
 import './Hero.css';
 
 // Para añadir tu foto: cambia PHOTO_SRC por la ruta a tu imagen, p.ej. '/foto-monica.jpg'
 const PHOTO_SRC = '/monica.png'; // déjalo vacío mientras no tengas foto
 
 export default function Hero() {
+  const { language } = useLanguage();
+  const t = translations[language].hero;
+
   return (
     <section id="hero" className="hero">
       <div className="hero__blob hero__blob--1" aria-hidden="true" />
@@ -14,29 +19,26 @@ export default function Hero() {
         <div className="hero__content">
           <div className="hero__badge">
             <span className="hero__badge-dot" />
-            Disponible para nuevas oportunidades
+            {t.badge}
           </div>
 
           <h1 className="hero__name">
-            Hola, soy <span>Mónica</span>
+            {language === 'es' ? 'Hola, soy' : "Hi, I'm"} <span>Mónica</span>
             <br />
             Muñoz de la Torre
           </h1>
 
-          <p className="hero__role">Desarrolladora Web Full Stack · DAW</p>
+          <p className="hero__role">{t.role}</p>
 
           <p className="hero__location">
             <svg className="hero__location-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
               <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
               <circle cx="12" cy="9" r="2.5" />
             </svg>
-            Valencia, España
+            {t.location}
           </p>
 
-          <p className="hero__description">
-            Desarrolladora web Full Stack con experiencia en proyectos full stack y frontend
-            a través de prácticas en empresa y proyectos académicos.
-          </p>
+          <p className="hero__description">{t.description}</p>
 
           <div className="hero__actions">
             <a href="#projects" className="btn btn-primary">
@@ -46,14 +48,14 @@ export default function Hero() {
                 <rect x="3" y="14" width="7" height="7" rx="1.5" />
                 <rect x="14" y="14" width="7" height="7" rx="1.5" />
               </svg>
-              Ver proyectos
+              {t.btnProjects}
             </a>
             <a href="#contact" className="btn btn-outline">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                 <polyline points="22,6 12,13 2,6" />
               </svg>
-              Contacto
+              {t.btnContact}
             </a>
             <a
               href="https://github.com/Monica-pxl"
@@ -76,7 +78,7 @@ export default function Hero() {
                 <polyline points="7 10 12 15 17 10" />
                 <line x1="12" y1="15" x2="12" y2="3" />
               </svg>
-              CV Español
+              {t.btnCvEs}
             </a>
             <a
               href="/cv-monica-en.pdf"
@@ -88,13 +90,13 @@ export default function Hero() {
                 <polyline points="7 10 12 15 17 10" />
                 <line x1="12" y1="15" x2="12" y2="3" />
               </svg>
-              CV English
+              {t.btnCvEn}
             </a>
           </div>
 
           <div className="hero__scroll" aria-hidden="true">
             <div className="hero__scroll-line" />
-            <span>Scroll</span>
+            <span>{t.scroll}</span>
           </div>
         </div>
 
