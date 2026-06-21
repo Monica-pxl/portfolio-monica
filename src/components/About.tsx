@@ -1,5 +1,5 @@
-import { useLanguage } from '../LanguageContext';
-import { translations } from '../translations';
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../i18n/translations';
 import './About.css';
 
 export default function About() {

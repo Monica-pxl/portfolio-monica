@@ -39,21 +39,27 @@ Es una SPA (Single Page Application) con las siguientes secciones:
 ## 4. Estructura del proyecto
 
 ```
-├── public/                        # Recursos estáticos servidos directamente (CV en PDF, foto de perfil)
+├── public/                          # Recursos estáticos (CV en PDF, foto de perfil)
 └── src/
-    ├── components/                # Secciones del portfolio, cada una con su .tsx y .css
-    │   ├── Navbar.tsx / .css      # Barra de navegación con cambio de idioma y tema
-    │   ├── Hero.tsx / .css        # Sección de presentación principal
-    │   ├── About.tsx / .css       # Información personal y formación
-    │   ├── Skills.tsx / .css      # Tecnologías agrupadas por categoría
-    │   ├── Projects.tsx / .css    # Tarjetas de proyectos destacados
-    │   ├── Experience.tsx / .css  # Experiencia laboral y prácticas
-    │   ├── Learned.tsx / .css     # Conocimientos prácticos adquiridos
-    │   └── Contact.tsx / .css     # Datos de contacto
-    ├── App.tsx                    # Componente raíz con layout y orden de secciones
-    ├── translations.ts            # Todos los textos del sitio en español e inglés
-    ├── LanguageContext.tsx        # Contexto y hook para el cambio de idioma
-    └── ThemeContext.tsx           # Contexto y hook para el cambio de tema (claro/oscuro)
+    ├── components/                  # Secciones del portfolio, cada una con su .tsx y .css
+    │   ├── Navbar.tsx / .css        # Barra de navegación con cambio de idioma y tema
+    │   ├── Hero.tsx / .css          # Sección de presentación principal
+    │   ├── About.tsx / .css         # Información personal y formación
+    │   ├── Skills.tsx / .css        # Tecnologías agrupadas por categoría
+    │   ├── Projects.tsx / .css      # Tarjetas de proyectos destacados
+    │   ├── Experience.tsx / .css    # Experiencia laboral y prácticas
+    │   ├── Learned.tsx / .css       # Conocimientos prácticos adquiridos
+    │   └── Contact.tsx / .css       # Datos de contacto
+    ├── context/                     # Contextos globales de React
+    │   ├── LanguageContext.tsx      # Contexto y hook para el cambio de idioma (ES / EN)
+    │   └── ThemeContext.tsx         # Contexto y hook para el cambio de tema (claro / oscuro)
+    ├── i18n/                        # Internacionalización
+    │   └── translations.ts          # Todos los textos del sitio en español e inglés
+    ├── assets/                      # Imágenes e iconos usados en la web
+    ├── App.tsx                      # Componente raíz con layout y orden de secciones
+    ├── App.css                      # Estilos globales residuales del scaffold de Vite
+    ├── index.css                    # Variables CSS, reset, tipografía y dark mode
+    └── main.tsx                     # Punto de entrada de la aplicación
 ```
 
 ---

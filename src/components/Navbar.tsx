@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import { useTheme } from '../ThemeContext';
-import { useLanguage } from '../LanguageContext';
-import { translations } from '../translations';
+import { useTheme } from '../context/ThemeContext';
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../i18n/translations';
 import './Navbar.css';
 
 export default function Navbar() {

@@ -1,5 +1,5 @@
-import { ThemeProvider } from './ThemeContext';
-import { LanguageProvider } from './LanguageContext';
+import { ThemeProvider } from './context/ThemeContext';
+import { LanguageProvider } from './context/LanguageContext';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Projects from './components/Projects';

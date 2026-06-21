@@ -1,6 +1,6 @@
 import { type ReactNode } from 'react';
-import { useLanguage } from '../LanguageContext';
-import { translations } from '../translations';
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../i18n/translations';
 import './Learned.css';
 
 interface LearningStatic {

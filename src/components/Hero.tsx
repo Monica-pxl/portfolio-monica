@@ -1,5 +1,5 @@
-import { useLanguage } from '../LanguageContext';
-import { translations } from '../translations';
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../i18n/translations';
 import './Hero.css';
 
 // Para añadir tu foto: cambia PHOTO_SRC por la ruta a tu imagen, p.ej. '/foto-monica.jpg'
