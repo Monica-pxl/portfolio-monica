@@ -70,7 +70,7 @@ export default function Hero() {
             </a>
             <a
               href="/cv-monica.pdf"
-              download="CV-Monica-Munoz.pdf"
+              download="Monica-Munoz-CV.pdf"
               className="btn btn-outline"
             >
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
@@ -79,18 +79,6 @@ export default function Hero() {
                 <line x1="12" y1="15" x2="12" y2="3" />
               </svg>
               {t.btnCvEs}
-            </a>
-            <a
-              href="/cv-monica-en.pdf"
-              download="CV-Monica-Munoz-EN.pdf"
-              className="btn btn-outline"
-            >
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
-                <polyline points="7 10 12 15 17 10" />
-                <line x1="12" y1="15" x2="12" y2="3" />
-              </svg>
-              {t.btnCvEn}
             </a>
           </div>
 

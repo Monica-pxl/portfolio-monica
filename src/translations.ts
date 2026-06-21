@@ -24,8 +24,7 @@ export const translations = {
         'Desarrolladora web con experiencia en proyectos full stack y frontend a través de prácticas en empresa y proyectos académicos.',
       btnProjects: 'Ver proyectos',
       btnContact: 'Contacto',
-      btnCvEs: 'CV Español',
-      btnCvEn: 'CV English',
+      btnCvEs: 'Descargar CV',
       scroll: 'Scroll',
     },
     about: {
@@ -129,7 +128,7 @@ export const translations = {
           title: 'Desarrollo Full Stack y herramientas modernas',
           description:
             'He trabajado en funcionalidades frontend y backend durante mis prácticas, integrando APIs, automatizando procesos y gestionando datos en Notion. También he creado componentes reutilizables y sistemas de diseño con Storybook en React.',
-          tags: ['React', 'Storybook', 'APIs', 'Notion', 'Frontend', 'Backend'],
+          tags: ['React', 'Storybook', 'APIs REST', 'Notion', 'Frontend', 'Backend'],
         },
         {
           title: 'Automatización y gestión de datos',
@@ -153,7 +152,7 @@ export const translations = {
           title: 'Control de calidad y testing',
           description:
             'He realizado pruebas de APIs con Postman y verificado el correcto funcionamiento del backend y el frontend para asegurar la estabilidad de las aplicaciones.',
-          tags: ['Postman', 'Testing', 'APIs', 'QA'],
+          tags: ['Postman', 'Testing', 'APIs REST', 'QA'],
         },
       ],
     },
@@ -193,8 +192,7 @@ export const translations = {
         'Web developer with experience in full stack and frontend projects through company internships and academic projects.',
       btnProjects: 'View projects',
       btnContact: 'Contact',
-      btnCvEs: 'CV Spanish',
-      btnCvEn: 'CV English',
+      btnCvEs: 'Download CV',
       scroll: 'Scroll',
     },
     about: {
@@ -298,7 +296,7 @@ export const translations = {
           title: 'Full Stack development and modern tools',
           description:
             'I worked on frontend and backend features during my internship, integrating APIs, automating processes and managing data in Notion. I also created reusable components and design systems with Storybook in React.',
-          tags: ['React', 'Storybook', 'APIs', 'Notion', 'Frontend', 'Backend'],
+          tags: ['React', 'Storybook', 'APIs REST', 'Notion', 'Frontend', 'Backend'],
         },
         {
           title: 'Automation and data management',
@@ -322,7 +320,7 @@ export const translations = {
           title: 'Quality assurance and testing',
           description:
             'I tested APIs with Postman and verified the correct functioning of backend and frontend to ensure application stability.',
-          tags: ['Postman', 'Testing', 'APIs', 'QA'],
+          tags: ['Postman', 'Testing', 'APIs REST', 'QA'],
         },
       ],
     },
