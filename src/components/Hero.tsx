@@ -69,7 +69,7 @@ export default function Hero() {
               GitHub
             </a>
             <a
-              href="/cv-monica.pdf"
+              href="/Monica-Munoz-CV.pdf"
               download="Monica-Munoz-CV.pdf"
               className="btn btn-outline"
             >
