@@ -61,8 +61,8 @@ Es una SPA (Single Page Application) con las siguientes secciones:
 ## 5. Instalación en local
 
 ```bash
-git clone https://github.com/Monica-pxl/monica-munoz-portfolio.git
-cd monica-munoz-portfolio
+git clone https://github.com/Monica-pxl/portfolio-monica.git
+cd portfolio-monica
 npm install
 npm run dev
 ```
