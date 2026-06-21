@@ -1,73 +1,90 @@
-# React + TypeScript + Vite
+# Portfolio — Mónica Muñoz de la Torre
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 1. Descripción del proyecto
 
-Currently, two official plugins are available:
+Portfolio personal desarrollado con **React + TypeScript + Vite**. Funciona como carta de presentación profesional: muestra mi perfil como desarrolladora web full stack, mis proyectos, experiencia y formas de contacto.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Es una SPA (Single Page Application) con las siguientes secciones:
 
-## React Compiler
+- **Inicio** — Presentación breve con acceso a proyectos, contacto y descarga de CV
+- **Sobre mí** — Formación (DAW, SMR) y motivaciones profesionales
+- **Skills** — Tecnologías y herramientas organizadas por categorías
+- **Proyectos** — Proyectos destacados con descripción y características
+- **Experiencia** — Historial laboral y prácticas en empresa
+- **Conocimientos prácticos** — Aprendizajes aplicados durante la formación
+- **Contacto** — Datos de contacto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 2. Tecnologías utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Framework:** React 19
+- **Lenguaje:** TypeScript
+- **Bundler:** Vite
+- **Estilos:** CSS por componente (sin frameworks externos)
+- **Control de versiones:** Git y GitHub
+- **Despliegue:** Vercel
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 3. Características
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Soporte multiidioma (español / inglés) mediante `LanguageContext`
+- Modo claro / oscuro mediante `ThemeContext`
+- Diseño responsive adaptado a móvil, tablet y escritorio
+- Navegación suave con anclas entre secciones
+
+---
+
+## 4. Estructura del proyecto
+
+```
+├── public/                        # Recursos estáticos servidos directamente (CV en PDF, foto de perfil)
+└── src/
+    ├── components/                # Secciones del portfolio, cada una con su .tsx y .css
+    │   ├── Navbar.tsx / .css      # Barra de navegación con cambio de idioma y tema
+    │   ├── Hero.tsx / .css        # Sección de presentación principal
+    │   ├── About.tsx / .css       # Información personal y formación
+    │   ├── Skills.tsx / .css      # Tecnologías agrupadas por categoría
+    │   ├── Projects.tsx / .css    # Tarjetas de proyectos destacados
+    │   ├── Experience.tsx / .css  # Experiencia laboral y prácticas
+    │   ├── Learned.tsx / .css     # Conocimientos prácticos adquiridos
+    │   └── Contact.tsx / .css     # Datos de contacto
+    ├── App.tsx                    # Componente raíz con layout y orden de secciones
+    ├── translations.ts            # Todos los textos del sitio en español e inglés
+    ├── LanguageContext.tsx        # Contexto y hook para el cambio de idioma
+    └── ThemeContext.tsx           # Contexto y hook para el cambio de tema (claro/oscuro)
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 5. Instalación en local
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/Monica-pxl/monica-munoz-portfolio.git
+cd monica-munoz-portfolio
+npm install
+npm run dev
 ```
+
+La aplicación estará disponible en [http://localhost:5173](http://localhost:5173).
+
+Para generar el build de producción:
+
+```bash
+npm run build
+```
+
+---
+
+## 6. Despliegue
+
+El portfolio está desplegado en Vercel y accesible en:
+
+**[https://monica-munoz-portfolio.vercel.app](https://monica-munoz-portfolio.vercel.app)**
+
+---
+
+## 7. Autora
+
+- **Autora:** Mónica Muñoz de la Torre
