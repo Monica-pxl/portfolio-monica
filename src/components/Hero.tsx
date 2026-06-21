@@ -23,7 +23,7 @@ export default function Hero() {
           </div>
 
           <h1 className="hero__name">
-            {language === 'es' ? 'Hola, soy' : "Hi, I'm"} <span>Mónicaa</span>
+            {language === 'es' ? 'Hola, soy' : "Hi, I'm"} <span>Mónica</span>
             <br />
             Muñoz de la Torre
           </h1>
