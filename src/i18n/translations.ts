@@ -2,13 +2,13 @@ export const translations = {
   es: {
     navbar: {
       links: [
-        { label: 'Inicio', href: 'inicio' },
-        { label: 'Sobre mí', href: 'sobre-mi' },
-        { label: 'Skills', href: 'skills' },
-        { label: 'Proyectos', href: 'proyectos' },
-        { label: 'Experiencia', href: 'experiencia' },
-        { label: 'Conocimientos prácticos', href: 'conocimientos-practicos' },
-        { label: 'Contacto', href: 'contacto' },
+        { label: 'Inicio', href: '#inicio' },
+        { label: 'Sobre mí', href: '#sobre-mi' },
+        { label: 'Skills', href: '#skills' },
+        { label: 'Proyectos', href: '#proyectos' },
+        { label: 'Experiencia', href: '#experiencia' },
+        { label: 'Conocimientos prácticos', href: '#conocimientos-practicos' },
+        { label: 'Contacto', href: '#contacto' },
       ],
       toggleDark: 'Activar modo oscuro',
       toggleLight: 'Activar modo claro',
@@ -170,13 +170,13 @@ export const translations = {
   en: {
     navbar: {
       links: [
-        { label: 'Home', href: 'hero' },
-        { label: 'About me', href: 'about' },
-        { label: 'Skills', href: 'skills' },
-        { label: 'Projects', href: 'projects' },
-        { label: 'Experience', href: 'experience' },
-        { label: 'Practical knowledge', href: 'learned' },
-        { label: 'Contact', href: 'contact' },
+        { label: 'Home', href: '#hero' },
+        { label: 'About me', href: '#about' },
+        { label: 'Skills', href: '#skills' },
+        { label: 'Projects', href: '#projects' },
+        { label: 'Experience', href: '#experience' },
+        { label: 'Practical knowledge', href: '#learned' },
+        { label: 'Contact', href: '#contact' },
       ],
       toggleDark: 'Enable dark mode',
       toggleLight: 'Enable light mode',
