@@ -2,13 +2,13 @@ export const translations = {
   es: {
     navbar: {
       links: [
-        { label: 'Inicio', href: '#inicio' },
-        { label: 'Sobre mí', href: '#sobre-mi' },
+        { label: 'Home', href: '#hero' },
+        { label: 'About me', href: '#about' },
         { label: 'Skills', href: '#skills' },
-        { label: 'Proyectos', href: '#proyectos' },
-        { label: 'Experiencia', href: '#experiencia' },
-        { label: 'Conocimientos prácticos', href: '#conocimientos-practicos' },
-        { label: 'Contacto', href: '#contacto' },
+        { label: 'Projects', href: '#projects' },
+        { label: 'Experience', href: '#experience' },
+        { label: 'Practical knowledge', href: '#learned' },
+        { label: 'Contact', href: '#contact' },
       ],
       toggleDark: 'Activar modo oscuro',
       toggleLight: 'Activar modo claro',
