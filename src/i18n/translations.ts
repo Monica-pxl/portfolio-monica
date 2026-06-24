@@ -2,13 +2,13 @@ export const translations = {
   es: {
     navbar: {
       links: [
-        { label: 'Inicio', href: '#hero' },
-        { label: 'Sobre mí', href: '#about' },
-        { label: 'Skills', href: '#skills' },
-        { label: 'Proyectos', href: '#projects' },
-        { label: 'Experiencia', href: '#experience' },
-        { label: 'Conocimientos prácticos', href: '#learned' },
-        { label: 'Contacto', href: '#contact' },
+        { label: 'Inicio', href: 'inicio' },
+        { label: 'Sobre mí', href: 'sobre-mi' },
+        { label: 'Skills', href: 'skills' },
+        { label: 'Proyectos', href: 'proyectos' },
+        { label: 'Experiencia', href: 'experiencia' },
+        { label: 'Conocimientos prácticos', href: 'conocimientos-practicos' },
+        { label: 'Contacto', href: 'contacto' },
       ],
       toggleDark: 'Activar modo oscuro',
       toggleLight: 'Activar modo claro',
@@ -68,7 +68,7 @@ export const translations = {
         },
         {
           id: 'gallery',
-          title: 'Galería Interactiva',
+          title: 'Gallery Space',
           subtitle: 'SPA · React + TypeScript',
           description:
             'Single Page Application con gestión de tarjetas fotográficas. Permite agregar, editar y eliminar imágenes, dar likes, reordenarlas con drag & drop y alternar entre modo claro y oscuro.',
@@ -170,13 +170,13 @@ export const translations = {
   en: {
     navbar: {
       links: [
-        { label: 'Home', href: '#hero' },
-        { label: 'About me', href: '#about' },
-        { label: 'Skills', href: '#skills' },
-        { label: 'Projects', href: '#projects' },
-        { label: 'Experience', href: '#experience' },
-        { label: 'Practical knowledge', href: '#learned' },
-        { label: 'Contact', href: '#contact' },
+        { label: 'Home', href: 'hero' },
+        { label: 'About me', href: 'about' },
+        { label: 'Skills', href: 'skills' },
+        { label: 'Projects', href: 'projects' },
+        { label: 'Experience', href: 'experience' },
+        { label: 'Practical knowledge', href: 'learned' },
+        { label: 'Contact', href: 'contact' },
       ],
       toggleDark: 'Enable dark mode',
       toggleLight: 'Enable light mode',
@@ -236,7 +236,7 @@ export const translations = {
         },
         {
           id: 'gallery',
-          title: 'Interactive Gallery',
+          title: 'Gallery Space',
           subtitle: 'SPA · React + TypeScript',
           description:
             'Single Page Application with photo card management. Allows adding, editing and deleting images, liking, reordering with drag & drop and toggling between light and dark mode.',

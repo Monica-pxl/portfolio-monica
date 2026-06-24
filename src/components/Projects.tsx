@@ -20,7 +20,7 @@ const PROJECTS: Project[] = [
     id: 'gallery',
     tags: ['React', 'TypeScript', 'Vite', 'CSS'],
     github: 'https://github.com/Monica-pxl/Proyecto-React-Monica-Munoz',
-    demo: null,
+    demo: 'https://gallery-space-three.vercel.app/',
   },
 ];
 
