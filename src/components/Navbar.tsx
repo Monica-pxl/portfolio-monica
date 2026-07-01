@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useTheme } from '../context/ThemeContext';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../i18n/translations';
+import { navigateToSection, type SectionId } from '../routes';
 import './Navbar.css';
 
 export default function Navbar() {
@@ -17,17 +18,32 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const sectionId = href.replace('#', '') as SectionId;
+    navigateToSection(sectionId, language);
+    setMenuOpen(false);
+  };
+
   return (
     <nav className={`navbar${scrolled ? ' navbar--scrolled' : ''}`}>
       <div className="navbar__inner container">
-        <a href="#hero" className="navbar__logo" onClick={() => setMenuOpen(false)}>
+        <a
+          href="/"
+          className="navbar__logo"
+          onClick={(e) => {
+            e.preventDefault();
+            navigateToSection('hero', language);
+            setMenuOpen(false);
+          }}
+        >
           Monica<span className="navbar__logo-dot">.</span>
         </a>
 
         <ul className={`navbar__links${menuOpen ? ' navbar__links--open' : ''}`}>
           {t.links.map(({ label, href }) => (
             <li key={href}>
-              <a href={href} onClick={() => setMenuOpen(false)}>
+              <a href={href} onClick={(e) => handleNavClick(e, href)}>
                 {label}
               </a>
             </li>

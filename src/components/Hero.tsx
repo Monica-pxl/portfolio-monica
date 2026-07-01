@@ -1,5 +1,6 @@
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../i18n/translations';
+import { navigateToSection } from '../routes';
 import './Hero.css';
 
 // Para añadir tu foto: cambia PHOTO_SRC por la ruta a tu imagen, p.ej. '/foto-monica.jpg'
@@ -41,7 +42,11 @@ export default function Hero() {
           <p className="hero__description">{t.description}</p>
 
           <div className="hero__actions">
-            <a href="#projects" className="btn btn-primary">
+            <a
+              href="#projects"
+              className="btn btn-primary"
+              onClick={(e) => { e.preventDefault(); navigateToSection('projects', language); }}
+            >
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                 <rect x="3" y="3" width="7" height="7" rx="1.5" />
                 <rect x="14" y="3" width="7" height="7" rx="1.5" />
@@ -50,7 +55,11 @@ export default function Hero() {
               </svg>
               {t.btnProjects}
             </a>
-            <a href="#contact" className="btn btn-outline">
+            <a
+              href="#contact"
+              className="btn btn-outline"
+              onClick={(e) => { e.preventDefault(); navigateToSection('contact', language); }}
+            >
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                 <polyline points="22,6 12,13 2,6" />

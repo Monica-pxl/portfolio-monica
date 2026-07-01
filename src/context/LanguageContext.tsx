@@ -1,4 +1,5 @@
 import { createContext, useContext, useState, type ReactNode } from 'react';
+import { getSectionIdFromPath, sectionPaths } from '../routes';
 
 export type Language = 'es' | 'en';
 
@@ -23,6 +24,13 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     setLanguage(l => {
       const next = l === 'es' ? 'en' : 'es';
       localStorage.setItem('language', next);
+
+      // Traducir la URL actual al nuevo idioma
+      const sectionId = getSectionIdFromPath(window.location.pathname);
+      if (sectionId) {
+        window.history.replaceState({}, '', sectionPaths[next][sectionId]);
+      }
+
       return next;
     });
   };

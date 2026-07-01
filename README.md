@@ -32,7 +32,8 @@ Es una SPA (Single Page Application) con las siguientes secciones:
 - Soporte multiidioma (español / inglés) mediante `LanguageContext`
 - Modo claro / oscuro mediante `ThemeContext`
 - Diseño responsive adaptado a móvil, tablet y escritorio
-- Navegación suave con anclas entre secciones
+- Rutas localizadas por idioma (ej: `/proyectos` en ES, `/projects` en EN)
+- Navegación suave entre secciones con actualización de URL mediante History API
 
 ---
 
@@ -53,6 +54,8 @@ Es una SPA (Single Page Application) con las siguientes secciones:
     ├── context/                     # Contextos globales de React
     │   ├── LanguageContext.tsx      # Contexto y hook para el cambio de idioma (ES / EN)
     │   └── ThemeContext.tsx         # Contexto y hook para el cambio de tema (claro / oscuro)
+    ├── routes/                      # Rutas localizadas de la aplicación
+    │   └── index.ts                 # Mapa de rutas por idioma y utilidades de navegación
     ├── i18n/                        # Internacionalización
     │   └── translations.ts          # Todos los textos del sitio en español e inglés
     ├── assets/                      # Imágenes e iconos usados en la web
@@ -88,6 +91,8 @@ npm run build
 El portfolio está desplegado en Vercel y accesible en:
 
 **[https://monica-munoz-portfolio.vercel.app](https://monica-munoz-portfolio.vercel.app)**
+
+Vercel está configurado mediante `vercel.json` para redirigir todas las rutas al `index.html`, permitiendo que el enrutamiento client-side funcione correctamente.
 
 ---
 
