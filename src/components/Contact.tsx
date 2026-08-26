@@ -29,7 +29,7 @@ const LINKS = [
   {
     id: 'linkedin',
     label: 'LinkedIn',
-    value: 'linkedin.com/in/monica-munoz',
+    value: 'linkedin.com/in/monicamunoztorre',
     href: 'https://www.linkedin.com/in/monicamunoztorre',
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
