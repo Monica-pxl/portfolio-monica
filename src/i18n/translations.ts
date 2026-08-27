@@ -98,6 +98,7 @@ export const translations = {
           period: 'mar. 2026 – may. 2026',
           tags: [
             'React',
+            'JavaScript',
             'TypeScript',
             'Node.js',
             'Express.js',
@@ -115,11 +116,12 @@ export const translations = {
           period: 'oct. 2025 – may. 2026',
           tags: [
             'Angular',
+            'JavaScript',
+            'TypeScript',
             'Node.js',
             'Express.js',
             'MongoDB',
             'JWT',
-            'TypeScript',
           ],
           description:
             'Aplicación web full stack para gestión de citas en centros de peluquería multicentro. Incluye autenticación JWT, sistema de roles y gestión de reservas en tiempo real.',
@@ -305,6 +307,7 @@ export const translations = {
           period: 'Mar. 2026 – May 2026',
           tags: [
             'React',
+            'JavaScript',
             'TypeScript',
             'Node.js',
             'Express.js',
@@ -322,11 +325,12 @@ export const translations = {
           period: 'Oct. 2025 – May 2026',
           tags: [
             'Angular',
+            'JavaScript',
+            'TypeScript',
             'Node.js',
             'Express.js',
             'MongoDB',
             'JWT',
-            'TypeScript',
           ],
           description:
             'Full stack web application for appointment management in multi-center hairdressing salons. Includes JWT authentication, role system and real-time booking management.',
