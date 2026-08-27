@@ -121,6 +121,7 @@ export const translations = {
             'Node.js',
             'Express.js',
             'MongoDB',
+            'APIs REST',
             'JWT',
           ],
           description:
