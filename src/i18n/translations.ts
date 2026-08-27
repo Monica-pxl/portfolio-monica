@@ -7,7 +7,7 @@ export const translations = {
         { label: 'Skills', href: '#skills' },
         { label: 'Proyectos', href: '#projects' },
         { label: 'Experiencia', href: '#experience' },
-        { label: 'Conocimientos prácticos', href: '#learned' },
+        { label: 'Experiencia práctica', href: '#learned' },
         { label: 'Contacto', href: '#contact' },
       ],
       toggleDark: 'Activar modo oscuro',
@@ -213,7 +213,7 @@ export const translations = {
         { label: 'Skills', href: '#skills' },
         { label: 'Projects', href: '#projects' },
         { label: 'Experience', href: '#experience' },
-        { label: 'Practical knowledge', href: '#learned' },
+        { label: 'Practical Experience', href: '#learned' },
         { label: 'Contact', href: '#contact' },
       ],
       toggleDark: 'Enable dark mode',
@@ -352,7 +352,7 @@ export const translations = {
 
     learned: {
       title: 'Practical',
-      titleSpan: 'knowledge',
+      titleSpan: 'experience',
       subtitle:
         'Practical experience acquired mainly during my internships, as well as through academic projects.',
       items: [
