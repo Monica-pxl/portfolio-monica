@@ -100,12 +100,13 @@ export const translations = {
             'React',
             'TypeScript',
             'Node.js',
+            'Express.js',
             'Git',
             'APIs REST',
             'Postman',
           ],
           description:
-            'Participación en el desarrollo y mantenimiento de aplicaciones web en un entorno de logística, trabajando con React, TypeScript y Node.js. Colaboración con el equipo técnico en el desarrollo de funcionalidades, integración de APIs REST, pruebas con Postman y desarrollo de herramientas internas.',
+            'Participación en el desarrollo y mantenimiento de aplicaciones web en un entorno de logística, trabajando con React, TypeScript, Node.js y Express.js. Colaboración con el equipo técnico en el desarrollo de funcionalidades, integración de APIs REST, pruebas con Postman y desarrollo de herramientas internas.',
         },
         {
           id: 'exp2',
@@ -115,7 +116,7 @@ export const translations = {
           tags: [
             'Angular',
             'Node.js',
-            'Express',
+            'Express.js',
             'MongoDB',
             'JWT',
             'TypeScript',
@@ -306,12 +307,13 @@ export const translations = {
             'React',
             'TypeScript',
             'Node.js',
+            'Express.js',
             'Git',
             'REST APIs',
             'Postman',
           ],
           description:
-            'Participated in the development and maintenance of web applications in a logistics environment, working with React, TypeScript and Node.js. Collaborated with the technical team on feature development, REST API integration, Postman testing and internal tool development.',
+            'Participated in the development and maintenance of web applications in a logistics environment, working with React, TypeScript, Node.js and Express.js. Collaborated with the technical team on feature development, REST API integration, Postman testing and internal tool development.',
         },
         {
           id: 'exp2',
@@ -321,7 +323,7 @@ export const translations = {
           tags: [
             'Angular',
             'Node.js',
-            'Express',
+            'Express.js',
             'MongoDB',
             'JWT',
             'TypeScript',
