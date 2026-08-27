@@ -213,7 +213,7 @@ export const translations = {
         { label: 'Skills', href: '#skills' },
         { label: 'Projects', href: '#projects' },
         { label: 'Experience', href: '#experience' },
-        { label: 'Practical Experience', href: '#learned' },
+        { label: 'Practical experience', href: '#learned' },
         { label: 'Contact', href: '#contact' },
       ],
       toggleDark: 'Enable dark mode',
