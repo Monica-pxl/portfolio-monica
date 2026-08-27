@@ -32,7 +32,7 @@ const SKILL_GROUPS: SkillGroup[] = [
   {
     categoryKey: 4,
     icon: '⌘',
-    skills: ['Git', 'GitHub', 'VS Code', 'IntelliJ IDEA', 'Visual Studio', 'WordPress', 'Canva', 'XAMPP', 'MySQL Workbench'],
+    skills: ['Git', 'GitHub', 'Postman', 'VS Code', 'IntelliJ IDEA', 'Visual Studio', 'WordPress', 'Canva', 'XAMPP', 'MySQL Workbench'],
   },
 ];
 
