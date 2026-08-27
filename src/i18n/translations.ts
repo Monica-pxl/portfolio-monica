@@ -16,6 +16,7 @@ export const translations = {
       modoLight: 'Modo claro',
       openMenu: 'Abrir menú',
     },
+
     hero: {
       badge: 'Disponible para nuevas oportunidades',
       role: 'Desarrolladora Web Full Stack · DAW',
@@ -27,6 +28,7 @@ export const translations = {
       btnCvEs: 'Descargar CV',
       scroll: 'Scroll',
     },
+
     about: {
       title: 'Sobre',
       titleSpan: 'mí',
@@ -41,6 +43,7 @@ export const translations = {
       card3Sub: 'Proyectos académicos y prácticas en empresa',
       statProjects: 'proyectos',
     },
+
     skills: {
       title: 'Mis',
       titleSpan: 'skills',
@@ -53,6 +56,7 @@ export const translations = {
         'Herramientas',
       ],
     },
+
     projects: {
       title: 'Mis',
       titleSpan: 'proyectos',
@@ -64,7 +68,12 @@ export const translations = {
           subtitle: 'TFG — Gestión de peluquerías',
           description:
             'Aplicación web full stack para gestión de citas en peluquerías multicentro. Incluye sistema de autenticación con JWT, gestión de roles diferenciados, reservas online y una API REST completa.',
-          features: ['Autenticación y roles', 'Reservas online', 'API REST', 'Multi-centro'],
+          features: [
+            'Autenticación y roles',
+            'Reservas online',
+            'API REST',
+            'Multi-centro',
+          ],
         },
         {
           id: 'gallery',
@@ -77,6 +86,7 @@ export const translations = {
       ],
       demo: 'Demo',
     },
+
     experience: {
       title: 'Experiencia',
       subtitle: 'Prácticas, proyectos y formación',
@@ -86,16 +96,30 @@ export const translations = {
           title: 'Prácticas en desarrollo web (DAW)',
           type: 'Contrato de formación · En remoto',
           period: 'mar. 2026 – may. 2026',
-          tags: ['Node.js', 'TypeScript', 'React', 'Git'],
+          tags: [
+            'React',
+            'TypeScript',
+            'Node.js',
+            'APIs REST',
+            'Git',
+            'Postman',
+          ],
           description:
-            'Participación en el desarrollo y mantenimiento de aplicaciones web en un entorno de logística, colaborando con el equipo técnico en tareas de soporte, actualización de funcionalidades y gestión de contenido.',
+            'Desarrollo y mantenimiento de aplicaciones web en un entorno de logística, trabajando con React, TypeScript y Node.js. Colaboración con el equipo técnico en el desarrollo de funcionalidades, integración y consumo de APIs REST, pruebas con Postman y creación de herramientas y automatizaciones internas.',
         },
         {
           id: 'exp2',
           title: 'Proyecto final de FP (TFG) — HairGest',
           type: 'Proyecto académico',
           period: 'oct. 2025 – may. 2026',
-          tags: ['Angular', 'Node.js', 'Express', 'MongoDB', 'JWT', 'TypeScript'],
+          tags: [
+            'Angular',
+            'Node.js',
+            'Express',
+            'MongoDB',
+            'JWT',
+            'TypeScript',
+          ],
           description:
             'Aplicación web full stack para gestión de citas en centros de peluquería multicentro. Incluye autenticación JWT, sistema de roles y gestión de reservas en tiempo real.',
         },
@@ -119,43 +143,58 @@ export const translations = {
         },
       ],
     },
+
     learned: {
-      title: 'Conocimientos',
-      titleSpan: 'prácticos',
-      subtitle: 'Reflexiones y aprendizajes clave a lo largo de mi formación y experiencia',
+      title: 'Experiencia',
+      titleSpan: 'práctica',
+      subtitle:
+        'Experiencia práctica adquirida principalmente durante mis prácticas, además de proyectos académicos y personales.',
       items: [
         {
           title: 'Desarrollo Full Stack y herramientas modernas',
           description:
-            'He trabajado en funcionalidades frontend y backend durante mis prácticas, integrando APIs, automatizando procesos y gestionando datos en Notion. También he creado componentes reutilizables y sistemas de diseño con Storybook en React.',
-          tags: ['React', 'Storybook', 'APIs REST', 'Notion', 'Frontend', 'Backend'],
+            'Durante mis prácticas he trabajado en funcionalidades frontend y backend, integrando APIs y desarrollando componentes reutilizables con React y Storybook. También he participado en la creación de herramientas internas y automatizaciones para mejorar procesos de trabajo.',
+          tags: [
+            'React',
+            'Storybook',
+            'APIs REST',
+            'Frontend',
+            'Backend',
+            'Automatización',
+          ],
         },
         {
           title: 'Automatización y gestión de datos',
           description:
-            'He participado en la creación de flujos de automatización: envío de correos automáticos, gestión de reseñas de usuarios y almacenamiento estructurado de información en bases de datos conectadas con Notion.',
-          tags: ['Automatización', 'Notion', 'Email', 'Base de datos'],
+            'He participado en la creación de flujos de automatización, incluyendo el envío de correos automáticos, la gestión de reseñas de usuarios y el almacenamiento estructurado de información mediante Notion.',
+          tags: ['Automatización', 'Notion', 'Email', 'Gestión de datos'],
         },
         {
           title: 'Desarrollo de extensiones y herramientas internas',
           description:
-            'He desarrollado una extensión de Chrome orientada a mejorar la productividad en reuniones diarias (daily standups), utilizada dentro del entorno de la empresa.',
-          tags: ['Chrome Extension', 'JavaScript', 'DevTools', 'Productividad'],
+            'He desarrollado una extensión de Chrome orientada a mejorar la productividad durante las reuniones diarias (daily standups), utilizada dentro del entorno de la empresa.',
+          tags: [
+            'Chrome Extension',
+            'JavaScript',
+            'DevTools',
+            'Herramientas internas',
+          ],
         },
         {
           title: 'Diseño web y experiencia de usuario',
           description:
-            'He apoyado en tareas de diseño frontend: selección de referencias visuales, creación de maquetas y uso de herramientas como WordPress, Canva y CSS para mejorar la parte visual de los proyectos.',
+            'He apoyado en tareas de diseño frontend, incluyendo la selección de referencias visuales, creación de maquetas y uso de herramientas como WordPress, Canva y CSS para mejorar la parte visual de los proyectos.',
           tags: ['WordPress', 'Canva', 'CSS', 'Maquetación', 'UX/UI'],
         },
         {
           title: 'Control de calidad y testing',
           description:
-            'He realizado pruebas de APIs con Postman y verificado el correcto funcionamiento del backend y el frontend para asegurar la estabilidad de las aplicaciones.',
+            'He realizado pruebas de APIs con Postman y verificado el correcto funcionamiento del backend y frontend para asegurar la estabilidad de las aplicaciones.',
           tags: ['Postman', 'Testing', 'APIs REST', 'QA'],
         },
       ],
     },
+
     contact: {
       title: 'Hablemos',
       titleSpan: ':)',
@@ -184,6 +223,7 @@ export const translations = {
       modoLight: 'Light mode',
       openMenu: 'Open menu',
     },
+
     hero: {
       badge: 'Available for new opportunities',
       role: 'Full Stack Developer · DAW',
@@ -195,6 +235,7 @@ export const translations = {
       btnCvEs: 'Download CV',
       scroll: 'Scroll',
     },
+
     about: {
       title: 'About',
       titleSpan: 'me',
@@ -209,6 +250,7 @@ export const translations = {
       card3Sub: 'Academic projects and company internships',
       statProjects: 'projects',
     },
+
     skills: {
       title: 'My',
       titleSpan: 'skills',
@@ -221,6 +263,7 @@ export const translations = {
         'Tools',
       ],
     },
+
     projects: {
       title: 'My',
       titleSpan: 'projects',
@@ -232,7 +275,12 @@ export const translations = {
           subtitle: 'Final Project — Hair salon management',
           description:
             'Full stack web application for appointment management in multi-center hairdressing salons. Includes JWT authentication, role management, online booking and a complete REST API.',
-          features: ['Auth & roles', 'Online booking', 'REST API', 'Multi-center'],
+          features: [
+            'Auth & roles',
+            'Online booking',
+            'REST API',
+            'Multi-center',
+          ],
         },
         {
           id: 'gallery',
@@ -245,6 +293,7 @@ export const translations = {
       ],
       demo: 'Demo',
     },
+
     experience: {
       title: 'Experience',
       subtitle: 'Internships, projects and training',
@@ -254,16 +303,30 @@ export const translations = {
           title: 'Web development internship (DAW)',
           type: 'Training contract · Remote',
           period: 'Mar. 2026 – May 2026',
-          tags: ['Node.js', 'TypeScript', 'React', 'Git'],
+          tags: [
+            'React',
+            'TypeScript',
+            'Node.js',
+            'REST APIs',
+            'Git',
+            'Postman',
+          ],
           description:
-            'Participation in the development and maintenance of web applications in a logistics environment, collaborating with the technical team on support tasks, feature updates and content management.',
+            'Development and maintenance of web applications in a logistics environment, working with React, TypeScript and Node.js. Collaboration with the technical team on feature development, REST API integration and consumption, Postman testing, and the creation of internal tools and automations.',
         },
         {
           id: 'exp2',
           title: 'Final vocational project (TFG) — HairGest',
           type: 'Academic project',
           period: 'Oct. 2025 – May 2026',
-          tags: ['Angular', 'Node.js', 'Express', 'MongoDB', 'JWT', 'TypeScript'],
+          tags: [
+            'Angular',
+            'Node.js',
+            'Express',
+            'MongoDB',
+            'JWT',
+            'TypeScript',
+          ],
           description:
             'Full stack web application for appointment management in multi-center hairdressing salons. Includes JWT authentication, role system and real-time booking management.',
         },
@@ -287,43 +350,58 @@ export const translations = {
         },
       ],
     },
+
     learned: {
       title: 'Practical',
-      titleSpan: 'knowledge',
-      subtitle: 'Key reflections and learnings throughout my training and experience',
+      titleSpan: 'experience',
+      subtitle:
+        'Practical experience gained mainly during my internships, as well as through academic and personal projects.',
       items: [
         {
           title: 'Full Stack development and modern tools',
           description:
-            'I worked on frontend and backend features during my internship, integrating APIs, automating processes and managing data in Notion. I also created reusable components and design systems with Storybook in React.',
-          tags: ['React', 'Storybook', 'APIs REST', 'Notion', 'Frontend', 'Backend'],
+            'During my internship, I worked on frontend and backend features, integrating APIs and developing reusable components with React and Storybook. I also participated in creating internal tools and automations to improve workflows.',
+          tags: [
+            'React',
+            'Storybook',
+            'REST APIs',
+            'Frontend',
+            'Backend',
+            'Automation',
+          ],
         },
         {
           title: 'Automation and data management',
           description:
-            'I participated in building automation flows: automatic email sending, user review management and structured data storage in databases connected with Notion.',
-          tags: ['Automation', 'Notion', 'Email', 'Database'],
+            'I participated in building automation flows, including automatic email sending, user review management and structured information storage using Notion.',
+          tags: ['Automation', 'Notion', 'Email', 'Data management'],
         },
         {
           title: 'Extension and internal tool development',
           description:
-            'I developed a Chrome extension aimed at improving productivity in daily standup meetings, used within the company environment.',
-          tags: ['Chrome Extension', 'JavaScript', 'DevTools', 'Productivity'],
+            'I developed a Chrome extension aimed at improving productivity during daily standup meetings, used within the company environment.',
+          tags: [
+            'Chrome Extension',
+            'JavaScript',
+            'DevTools',
+            'Internal Tools',
+          ],
         },
         {
           title: 'Web design and user experience',
           description:
-            'I supported frontend design tasks: selecting visual references, creating mockups and using tools like WordPress, Canva and CSS to improve the visual side of projects.',
+            'I supported frontend design tasks, including selecting visual references, creating mockups and using tools such as WordPress, Canva and CSS to improve the visual side of projects.',
           tags: ['WordPress', 'Canva', 'CSS', 'Layout Design', 'UX/UI'],
         },
         {
           title: 'Quality assurance and testing',
           description:
             'I tested APIs with Postman and verified the correct functioning of backend and frontend to ensure application stability.',
-          tags: ['Postman', 'Testing', 'APIs REST', 'QA'],
+          tags: ['Postman', 'Testing', 'REST APIs', 'QA'],
         },
       ],
     },
+
     contact: {
       title: "Let's talk",
       titleSpan: ':)',
