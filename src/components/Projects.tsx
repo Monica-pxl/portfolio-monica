@@ -12,7 +12,7 @@ interface Project {
 const PROJECTS: Project[] = [
   {
     id: 'hairgest',
-    tags: ['Angular', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'TypeScript'],
+    tags: ['Angular', 'JavaScript', 'TypeScript', 'Node.js', 'Express.js', 'MongoDB', 'JWT'],
     github: 'https://github.com/Monica-pxl/tfg-peluqueria-monica-munoz-mean',
     demo: 'https://hairgest-angular.vercel.app/',
   },
