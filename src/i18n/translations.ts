@@ -100,12 +100,12 @@ export const translations = {
             'React',
             'TypeScript',
             'Node.js',
-            'APIs REST',
             'Git',
+            'APIs REST',
             'Postman',
           ],
           description:
-            'Desarrollo y mantenimiento de aplicaciones web en un entorno de logística, trabajando con React, TypeScript y Node.js. Colaboración con el equipo técnico en el desarrollo de funcionalidades, integración y consumo de APIs REST, pruebas con Postman y creación de herramientas y automatizaciones internas.',
+            'Participación en el desarrollo y mantenimiento de aplicaciones web en un entorno de logística, trabajando con React, TypeScript y Node.js. Colaboración con el equipo técnico en el desarrollo de funcionalidades, integración de APIs REST, pruebas con Postman y desarrollo de herramientas internas.',
         },
         {
           id: 'exp2',
@@ -148,31 +148,30 @@ export const translations = {
       title: 'Experiencia',
       titleSpan: 'práctica',
       subtitle:
-        'Experiencia práctica adquirida principalmente durante mis prácticas, además de proyectos académicos y personales.',
+        'Experiencia práctica adquirida principalmente durante mis prácticas, además de proyectos académicos.',
       items: [
         {
           title: 'Desarrollo Full Stack y herramientas modernas',
           description:
-            'Durante mis prácticas he trabajado en funcionalidades frontend y backend, integrando APIs y desarrollando componentes reutilizables con React y Storybook. También he participado en la creación de herramientas internas y automatizaciones para mejorar procesos de trabajo.',
+            'Durante mis prácticas he trabajado en funcionalidades frontend y backend, integrando APIs y desarrollando componentes reutilizables con React y Storybook.',
           tags: [
             'React',
             'Storybook',
             'APIs REST',
             'Frontend',
             'Backend',
-            'Automatización',
           ],
         },
         {
           title: 'Automatización y gestión de datos',
           description:
-            'He participado en la creación de flujos de automatización, incluyendo el envío de correos automáticos, la gestión de reseñas de usuarios y el almacenamiento estructurado de información mediante Notion.',
-          tags: ['Automatización', 'Notion', 'Email', 'Gestión de datos'],
+            'He participado en la creación de flujos de automatización: envío de correos automáticos, gestión de reseñas de usuarios y almacenamiento estructurado de información en bases de datos conectadas con Notion.',
+          tags: ['Automatización', 'Notion', 'Email', 'Base de datos'],
         },
         {
           title: 'Desarrollo de extensiones y herramientas internas',
           description:
-            'He desarrollado una extensión de Chrome orientada a mejorar la productividad durante las reuniones diarias (daily standups), utilizada dentro del entorno de la empresa.',
+            'He desarrollado una extensión de Chrome orientada a mejorar la productividad en reuniones diarias (daily standups), utilizada dentro del entorno de la empresa.',
           tags: [
             'Chrome Extension',
             'JavaScript',
@@ -183,13 +182,13 @@ export const translations = {
         {
           title: 'Diseño web y experiencia de usuario',
           description:
-            'He apoyado en tareas de diseño frontend, incluyendo la selección de referencias visuales, creación de maquetas y uso de herramientas como WordPress, Canva y CSS para mejorar la parte visual de los proyectos.',
+            'He apoyado en tareas de diseño frontend: selección de referencias visuales, creación de maquetas y uso de herramientas como WordPress, Canva y CSS para mejorar la parte visual de los proyectos.',
           tags: ['WordPress', 'Canva', 'CSS', 'Maquetación', 'UX/UI'],
         },
         {
           title: 'Control de calidad y testing',
           description:
-            'He realizado pruebas de APIs con Postman y verificado el correcto funcionamiento del backend y frontend para asegurar la estabilidad de las aplicaciones.',
+            'He realizado pruebas de APIs con Postman y verificado el correcto funcionamiento del backend y el frontend para asegurar la estabilidad de las aplicaciones.',
           tags: ['Postman', 'Testing', 'APIs REST', 'QA'],
         },
       ],
@@ -307,12 +306,12 @@ export const translations = {
             'React',
             'TypeScript',
             'Node.js',
-            'REST APIs',
             'Git',
+            'REST APIs',
             'Postman',
           ],
           description:
-            'Development and maintenance of web applications in a logistics environment, working with React, TypeScript and Node.js. Collaboration with the technical team on feature development, REST API integration and consumption, Postman testing, and the creation of internal tools and automations.',
+            'Participated in the development and maintenance of web applications in a logistics environment, working with React, TypeScript and Node.js. Collaborated with the technical team on feature development, REST API integration, Postman testing and internal tool development.',
         },
         {
           id: 'exp2',
@@ -353,33 +352,32 @@ export const translations = {
 
     learned: {
       title: 'Practical',
-      titleSpan: 'experience',
+      titleSpan: 'knowledge',
       subtitle:
-        'Practical experience gained mainly during my internships, as well as through academic and personal projects.',
+        'Practical experience acquired mainly during my internships, as well as through academic projects.',
       items: [
         {
           title: 'Full Stack development and modern tools',
           description:
-            'During my internship, I worked on frontend and backend features, integrating APIs and developing reusable components with React and Storybook. I also participated in creating internal tools and automations to improve workflows.',
+            'During my internship, I worked on frontend and backend features, integrating APIs and developing reusable components with React and Storybook.',
           tags: [
             'React',
             'Storybook',
             'REST APIs',
             'Frontend',
             'Backend',
-            'Automation',
           ],
         },
         {
           title: 'Automation and data management',
           description:
-            'I participated in building automation flows, including automatic email sending, user review management and structured information storage using Notion.',
-          tags: ['Automation', 'Notion', 'Email', 'Data management'],
+            'I participated in building automation flows: automatic email sending, user review management and structured data storage in databases connected with Notion.',
+          tags: ['Automation', 'Notion', 'Email', 'Database'],
         },
         {
           title: 'Extension and internal tool development',
           description:
-            'I developed a Chrome extension aimed at improving productivity during daily standup meetings, used within the company environment.',
+            'I developed a Chrome extension aimed at improving productivity in daily standup meetings, used within the company environment.',
           tags: [
             'Chrome Extension',
             'JavaScript',
@@ -390,7 +388,7 @@ export const translations = {
         {
           title: 'Web design and user experience',
           description:
-            'I supported frontend design tasks, including selecting visual references, creating mockups and using tools such as WordPress, Canva and CSS to improve the visual side of projects.',
+            'I supported frontend design tasks: selecting visual references, creating mockups and using tools like WordPress, Canva and CSS to improve the visual side of projects.',
           tags: ['WordPress', 'Canva', 'CSS', 'Layout Design', 'UX/UI'],
         },
         {
