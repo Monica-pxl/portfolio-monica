@@ -125,7 +125,7 @@ export const translations = {
             'JWT',
           ],
           description:
-            'Aplicación web full stack para gestión de citas en centros de peluquería multicentro. Incluye autenticación JWT, sistema de roles y gestión de reservas en tiempo real.',
+            'Aplicación web full stack para gestión de citas en centros de peluquería multicentro. Incluye autenticación JWT, sistema de roles y gestión de reservas.',
         },
         {
           id: 'exp3',
@@ -334,7 +334,7 @@ export const translations = {
             'JWT',
           ],
           description:
-            'Full stack web application for appointment management in multi-center hairdressing salons. Includes JWT authentication, role system and real-time booking management.',
+            'Full stack web application for appointment management in multi-center hairdressing salons. Includes JWT authentication, role system and booking management.',
         },
         {
           id: 'exp3',
