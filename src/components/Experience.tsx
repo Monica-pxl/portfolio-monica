@@ -9,9 +9,8 @@ interface Experience {
 
 const EXPERIENCES: Experience[] = [
   { id: 'exp1', company: 'SendingBay' },
-  { id: 'exp2', company: 'DigitechFP' },
-  { id: 'exp3', company: 'Cibernova' },
-  { id: 'exp4', company: 'Boconni Projects' },
+  { id: 'exp2', company: 'Cibernova' },
+  { id: 'exp3', company: 'Boconni Projects' },
 ];
 
 export default function Experience() {

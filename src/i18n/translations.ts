@@ -119,24 +119,6 @@ export const translations = {
         },
         {
           id: 'exp2',
-          title: 'Proyecto final de FP (TFG) — HairGest',
-          type: 'Proyecto académico',
-          period: 'oct. 2025 – may. 2026',
-          tags: [
-            'Angular',
-            'JavaScript',
-            'TypeScript',
-            'Node.js',
-            'Express.js',
-            'MongoDB',
-            'APIs REST',
-            'JWT',
-          ],
-          description:
-            'Aplicación web full stack para gestión de citas en centros de peluquería multicentro. Incluye autenticación JWT, sistema de roles y gestión de reservas.',
-        },
-        {
-          id: 'exp3',
           title: 'Prácticas DAW (formación)',
           type: 'Contrato de formación · En remoto',
           period: 'may. 2025 – jun. 2025',
@@ -145,7 +127,7 @@ export const translations = {
             'Formación en desarrollo web mediante proyectos guiados y ejercicios prácticos en tecnologías frontend y backend.',
         },
         {
-          id: 'exp4',
+          id: 'exp3',
           title: 'Prácticas Grado Medio',
           type: 'Contrato de formación · Híbrido',
           period: 'abr. 2024 – jun. 2024',
@@ -337,23 +319,6 @@ export const translations = {
         },
         {
           id: 'exp2',
-          title: 'Final vocational project (TFG) — HairGest',
-          type: 'Academic project',
-          period: 'Oct. 2025 – May 2026',
-          tags: [
-            'Angular',
-            'JavaScript',
-            'TypeScript',
-            'Node.js',
-            'Express.js',
-            'MongoDB',
-            'JWT',
-          ],
-          description:
-            'Full stack web application for appointment management in multi-center hairdressing salons. Includes JWT authentication, role system and booking management.',
-        },
-        {
-          id: 'exp3',
           title: 'DAW training internship',
           type: 'Training contract · Remote',
           period: 'May 2025 – Jun. 2025',
@@ -362,7 +327,7 @@ export const translations = {
             'Web development training through guided projects and practical exercises in frontend and backend technologies.',
         },
         {
-          id: 'exp4',
+          id: 'exp3',
           title: 'SMR Internship',
           type: 'Training contract · Hybrid',
           period: 'Apr. 2024 – Jun. 2024',
