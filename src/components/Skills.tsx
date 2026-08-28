@@ -22,7 +22,7 @@ const SKILL_GROUPS: SkillGroup[] = [
   {
     categoryKey: 2,
     icon: '⬡',
-    skills: ['Node.js', 'Express.js', 'Prisma', 'APIs REST', 'JWT', 'Symfony', 'Doctrine ORM', 'Composer'],
+    skills: ['Node.js', 'Express.js', 'Prisma', 'APIs REST', 'JWT', 'Symfony', 'Doctrine ORM'],
   },
   {
     categoryKey: 3,
@@ -32,7 +32,7 @@ const SKILL_GROUPS: SkillGroup[] = [
   {
     categoryKey: 4,
     icon: '⌘',
-    skills: ['Git', 'GitHub', 'Postman', 'VS Code', 'IntelliJ IDEA', 'Visual Studio', 'WordPress', 'Canva', 'XAMPP', 'MySQL Workbench'],
+    skills: ['Git', 'GitHub', 'Postman', 'VS Code', 'IntelliJ IDEA', 'Visual Studio', 'WordPress', 'Canva', 'XAMPP', 'MySQL Workbench', 'Composer'],
   },
 ];
 
