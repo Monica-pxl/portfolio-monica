@@ -22,6 +22,12 @@ const PROJECTS: Project[] = [
     github: 'https://github.com/Monica-pxl/Proyecto-React-Monica-Munoz',
     demo: 'https://gallery-space-three.vercel.app/',
   },
+  {
+    id: 'chat-retro',
+    tags: ['React', 'Node.js', 'Socket.IO', 'MySQL', 'Prisma', 'Express.js', 'TypeScript', 'Vite', 'APIs REST', 'JWT'],
+    github: 'https://github.com/Monica-pxl/Chat-Retro.git',
+    demo: null,
+  }
 ];
 
 function CheckIcon() {
