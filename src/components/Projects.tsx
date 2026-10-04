@@ -11,6 +11,12 @@ interface Project {
 
 const PROJECTS: Project[] = [
   {
+    id: 'chat-retro',
+    tags: ['React', 'TypeScript', 'Node.js', 'Express.js', 'Socket.IO', 'MySQL', 'Prisma', 'Vite', 'APIs REST', 'JWT'],
+    github: 'https://github.com/Monica-pxl/Chat-Retro.git',
+    demo: 'https://chatretro-app.vercel.app/',
+  },
+  {
     id: 'hairgest',
     tags: ['Angular', 'JavaScript', 'TypeScript', 'Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'APIs REST', 'JWT'],
     github: 'https://github.com/Monica-pxl/tfg-peluqueria-monica-munoz-mean',
@@ -21,12 +27,6 @@ const PROJECTS: Project[] = [
     tags: ['React', 'TypeScript', 'Vite', 'CSS'],
     github: 'https://github.com/Monica-pxl/Proyecto-React-Monica-Munoz',
     demo: 'https://gallery-space-three.vercel.app/',
-  },
-  {
-    id: 'chat-retro',
-    tags: ['React', 'TypeScript', 'Node.js', 'Express.js', 'Socket.IO', 'MySQL', 'Prisma', 'Vite', 'APIs REST', 'JWT'],
-    github: 'https://github.com/Monica-pxl/Chat-Retro.git',
-    demo: 'https://chatretro-app.vercel.app/',
   }
 ];
 
