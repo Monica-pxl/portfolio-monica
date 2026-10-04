@@ -24,9 +24,9 @@ const PROJECTS: Project[] = [
   },
   {
     id: 'chat-retro',
-    tags: ['React', 'Node.js', 'Socket.IO', 'MySQL', 'Prisma', 'Express.js', 'TypeScript', 'Vite', 'APIs REST', 'JWT'],
+    tags: ['React', 'TypeScript', 'Node.js', 'Express.js', 'Socket.IO', 'MySQL', 'Prisma', 'Vite', 'APIs REST', 'JWT'],
     github: 'https://github.com/Monica-pxl/Chat-Retro.git',
-    demo: null,
+    demo: 'https://chatretro-app.vercel.app/',
   }
 ];
 

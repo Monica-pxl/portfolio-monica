@@ -86,7 +86,7 @@ export const translations = {
         {
           id: 'chat-retro',
           title: 'Chat Retro',
-          subtitle: 'Proyecto personal · React + Node.js · En desarrollo',
+          subtitle: 'Proyecto personal · React + Node.js',
           description:
             'Aplicación de chat en tiempo real de estilo nostálgico, desarrollada como proyecto personal. Incluye múltiples salas temáticas de chat, autenticación de usuarios por roles y mensajería privada.',
           features: ['Chat en tiempo real', 'Salas temáticas', 'Mensajería privada', 'Historial de mensajes'],
@@ -286,7 +286,7 @@ export const translations = {
         {
           id: 'chat-retro',
           title: 'Chat Retro',
-          subtitle: 'Personal project · React + Node.js · In development',
+          subtitle: 'Personal project · React + Node.js',
           description:
             'Nostalgic-style real-time chat application developed as a personal project. It includes multiple themed chat rooms, role-based user authentication, and private messaging.',
           features: ['Real-time chat', 'Themed chat rooms', 'Private messaging', 'Message history'],
