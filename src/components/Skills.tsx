@@ -12,7 +12,7 @@ const SKILL_GROUPS: SkillGroup[] = [
   {
     categoryKey: 0,
     icon: '{ }',
-    skills: ['JavaScript', 'TypeScript', 'Java', 'C#', 'PHP'],
+    skills: ['JavaScript', 'TypeScript', 'Python', 'Java', 'C#', 'PHP'],
   },
   {
     categoryKey: 1,
