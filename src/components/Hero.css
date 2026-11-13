@@ -305,8 +305,12 @@
     align-items: flex-start;
   }
 
+  .hero__photo-frame {
+    width: clamp(210px, 65vw, 270px);
+    height: clamp(270px, 83vw, 345px);
+  }
+
   .hero__scroll {
     margin-top: 2.5rem;
   }
 }
-

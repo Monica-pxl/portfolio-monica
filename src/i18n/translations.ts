@@ -183,7 +183,7 @@ export const translations = {
           title: 'Control de calidad y testing',
           description:
             'He realizado pruebas de APIs con Postman y verificado el correcto funcionamiento del backend y el frontend para asegurar la estabilidad de las aplicaciones.',
-          tags: ['Postman', 'Testing', 'APIs REST', 'QA'],
+          tags: ['Postman', 'Testing', 'APIs REST'],
         },
       ],
     },
@@ -383,7 +383,7 @@ export const translations = {
           title: 'Quality assurance and testing',
           description:
             'I tested APIs with Postman and verified the correct functioning of backend and frontend to ensure application stability.',
-          tags: ['Postman', 'Testing', 'REST APIs', 'QA'],
+          tags: ['Postman', 'Testing', 'REST APIs'],
         },
       ],
     },
