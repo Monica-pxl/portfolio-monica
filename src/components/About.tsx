@@ -1,5 +1,6 @@
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../i18n/translations';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import './About.css';
 
 export default function About() {
@@ -23,21 +24,27 @@ export default function About() {
 
             <div className="about-highlights">
               <div className="highlight-card glass-card">
-                <span className="highlight-card__icon">🎓</span>
+                <span className="highlight-card__icon" aria-hidden="true">
+                  <i className="bi bi-mortarboard-fill" />
+                </span>
                 <div>
                   <strong>{t.card1Title}</strong>
                   <span>{t.card1Sub}</span>
                 </div>
               </div>
               <div className="highlight-card glass-card">
-                <span className="highlight-card__icon">🖥️</span>
+                <span className="highlight-card__icon" aria-hidden="true">
+                  <i className="bi bi-pc-display" />
+                </span>
                 <div>
                   <strong>{t.card2Title}</strong>
                   <span>{t.card2Sub}</span>
                 </div>
               </div>
               <div className="highlight-card glass-card">
-                <span className="highlight-card__icon">🌐</span>
+                <span className="highlight-card__icon" aria-hidden="true">
+                  <i className="bi bi-globe2" />
+                </span>
                 <div>
                   <strong>{t.card3Title}</strong>
                   <span>{t.card3Sub}</span>

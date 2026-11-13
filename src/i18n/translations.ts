@@ -4,7 +4,7 @@ export const translations = {
       links: [
         { label: 'Inicio', href: '#hero' },
         { label: 'Sobre mí', href: '#about' },
-        { label: 'Skills', href: '#skills' },
+        { label: 'Habilidades', href: '#skills' },
         { label: 'Proyectos', href: '#projects' },
         { label: 'Experiencia', href: '#experience' },
         { label: 'Experiencia práctica', href: '#learned' },
@@ -46,7 +46,7 @@ export const translations = {
 
     skills: {
       title: 'Mis',
-      titleSpan: 'skills',
+      titleSpan: 'habilidades',
       subtitle: 'Tecnologías y herramientas con las que he trabajado',
       categories: [
         'Lenguajes',

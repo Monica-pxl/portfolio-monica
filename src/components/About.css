@@ -55,9 +55,19 @@
 }
 
 .highlight-card__icon {
-  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(212, 80, 140, 0.4);
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, rgba(248, 200, 232, 0.72), rgba(252, 232, 245, 0.92));
+  color: var(--pink-500);
+  font-size: 1.1rem;
   flex-shrink: 0;
   line-height: 1;
+  box-shadow: 0 3px 12px rgba(212, 80, 140, 0.18);
 }
 
 .highlight-card div {
@@ -75,6 +85,12 @@
 .highlight-card span {
   font-size: 0.78rem;
   color: var(--text-muted);
+}
+
+[data-theme="dark"] .highlight-card .highlight-card__icon {
+  border-color: rgba(212, 80, 140, 0.35);
+  background: linear-gradient(135deg, rgba(45, 20, 40, 0.9), rgba(30, 15, 26, 0.9));
+  color: var(--pink-300);
 }
 
 /* Visual side */
