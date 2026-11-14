@@ -22,7 +22,7 @@ export const translations = {
       role: 'Desarrolladora Web Full Stack · DAW',
       location: 'Valencia, España',
       description:
-        'Desarrolladora web con experiencia en proyectos full stack y frontend a través de prácticas en empresa y proyectos académicos.',
+        'Desarrolladora web junior con experiencia práctica en desarrollo full stack, proyectos web e integración de APIs REST.',
       btnProjects: 'Ver proyectos',
       btnContact: 'Contacto',
       btnCvEs: 'Descargar CV',
@@ -32,9 +32,9 @@ export const translations = {
     about: {
       title: 'Sobre',
       titleSpan: 'mí',
-      p1: 'Soy <strong>Mónica Muñoz de la Torre</strong>, Técnica Superior en Desarrollo de Aplicaciones Web (DAW). Antes completé el ciclo de Sistemas Microinformáticos y Redes (SMR), lo que me dio una base sólida en infraestructura y redes.',
-      p2: 'Me apasiona el desarrollo frontend y full stack. He trabajado en proyectos reales durante prácticas en empresa y a lo largo de mi formación, donde he aplicado tecnologías modernas y aprendido a trabajar de forma profesional.',
-      p3: 'Busco oportunidades donde pueda seguir creciendo, aportar energía y curiosidad, y desarrollarme como profesional en el mundo del desarrollo web.',
+      p1: 'Soy <strong>Mónica Muñoz de la Torre</strong>, Técnica Superior en Desarrollo de Aplicaciones Web (DAW) y Técnica en Sistemas Microinformáticos y Redes (SMR).',
+      p2: 'Tengo experiencia práctica en desarrollo web full stack, APIs REST y bases de datos, adquirida durante mis prácticas en empresa y mediante proyectos académicos y personales.',
+      p3: 'Me considero una persona metódica y detallista. Me gusta analizar cómo funcionan las aplicaciones, comprender la lógica que hay detrás de cada funcionalidad y comprobar que todo funciona correctamente. Busco una oportunidad como desarrolladora web junior en la que aplicar mis conocimientos y seguir adquiriendo experiencia profesional.',
       card1Title: 'DAW',
       card1Sub: 'Técnico Superior en Desarrollo de Aplicaciones Web',
       card2Title: 'SMR',
@@ -54,6 +54,7 @@ export const translations = {
         'Backend & Frameworks',
         'Bases de datos',
         'Herramientas',
+        'Despliegue y alojamiento',
       ],
     },
 
@@ -128,7 +129,7 @@ export const translations = {
         },
         {
           id: 'exp3',
-          title: 'Prácticas Grado Medio',
+          title: 'Prácticas Grado Medio (SMR)',
           type: 'Contrato de formación · Híbrido',
           period: 'abr. 2024 – jun. 2024',
           tags: ['WordPress', 'Canva', 'Diseño web'],
@@ -185,6 +186,12 @@ export const translations = {
             'He realizado pruebas de APIs con Postman y verificado el correcto funcionamiento del backend y el frontend para asegurar la estabilidad de las aplicaciones.',
           tags: ['Postman', 'Testing', 'APIs REST'],
         },
+        {
+          title: 'Despliegue y publicación de aplicaciones',
+          description:
+            'He realizado despliegues de aplicaciones web, publicando el frontend y el backend en plataformas externas y utilizando servicios de alojamiento de bases de datos.',
+          tags: ['Vercel', 'Render', 'Aiven.io'],
+        },
       ],
     },
 
@@ -222,7 +229,7 @@ export const translations = {
       role: 'Full Stack Developer · DAW',
       location: 'Valencia, Spain',
       description:
-        'Web developer with experience in full stack and frontend projects through company internships and academic projects.',
+        'Junior Web Developer with practical experience in full-stack development, web projects, and REST API integration.',
       btnProjects: 'View projects',
       btnContact: 'Contact',
       btnCvEs: 'Download CV',
@@ -232,9 +239,9 @@ export const translations = {
     about: {
       title: 'About',
       titleSpan: 'me',
-      p1: 'I am <strong>Mónica Muñoz de la Torre</strong>, a Higher Technician in Web Application Development (DAW). I previously completed the Microcomputer Systems and Networks (SMR) cycle, which gave me a solid foundation in infrastructure and networking.',
-      p2: 'I am passionate about frontend and full stack development. I have worked on real projects during company internships and throughout my training, applying modern technologies and learning to work professionally.',
-      p3: 'I am looking for opportunities where I can keep growing, bring energy and curiosity, and develop as a professional in the web development world.',
+      p1: 'I am <strong>Mónica Muñoz de la Torre</strong>, a Higher Technician in Web Application Development (DAW) and a Technician in Microcomputer Systems and Networks (SMR).',
+      p2: 'I have hands-on experience in full-stack web development, REST APIs, and databases, gained during my internships and through academic and personal projects.',
+      p3: 'I consider myself methodical and detail-oriented. I enjoy analyzing how applications work, understanding the logic behind each feature, and checking that everything works correctly. I am looking for an opportunity as a junior web developer where I can apply my skills and continue gaining professional experience.',
       card1Title: 'DAW',
       card1Sub: 'Higher Technician in Web Application Development',
       card2Title: 'SMR',
@@ -254,6 +261,7 @@ export const translations = {
         'Backend & Frameworks',
         'Databases',
         'Tools',
+        'Deployment & Hosting',
       ],
     },
 
@@ -384,6 +392,12 @@ export const translations = {
           description:
             'I tested APIs with Postman and verified the correct functioning of backend and frontend to ensure application stability.',
           tags: ['Postman', 'Testing', 'REST APIs'],
+        },
+        {
+          title: 'Application deployment and publishing',
+          description:
+            'I have deployed web applications, publishing the frontend and backend on external platforms and using database hosting services.',
+          tags: ['Vercel', 'Render', 'Aiven.io'],
         },
       ],
     },

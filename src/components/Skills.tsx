@@ -1,5 +1,6 @@
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../i18n/translations';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import './Skills.css';
 
 interface SkillGroup {
@@ -11,27 +12,32 @@ interface SkillGroup {
 const SKILL_GROUPS: SkillGroup[] = [
   {
     categoryKey: 0,
-    icon: '{ }',
+    icon: 'bi-code-slash',
     skills: ['JavaScript', 'TypeScript', 'Python', 'Java', 'C#', 'PHP'],
   },
   {
     categoryKey: 1,
-    icon: '◈',
+    icon: 'bi-window',
     skills: ['HTML', 'CSS', 'Angular', 'React', 'Bootstrap', 'Twig'],
   },
   {
     categoryKey: 2,
-    icon: '⬡',
+    icon: 'bi-boxes',
     skills: ['Node.js', 'Express.js', 'APIs REST', 'Socket.IO', 'JWT', 'Symfony', 'Doctrine ORM'],
   },
   {
     categoryKey: 3,
-    icon: '◭',
+    icon: 'bi-database',
     skills: ['MySQL', 'MongoDB'],
   },
   {
+    categoryKey: 5,
+    icon: 'bi-cloud-arrow-up',
+    skills: ['Vercel', 'Render', 'Aiven.io'],
+  },
+  {
     categoryKey: 4,
-    icon: '⌘',
+    icon: 'bi-tools',
     skills: ['Git', 'GitHub', 'Postman', 'VS Code', 'IntelliJ IDEA', 'Visual Studio', 'WordPress', 'Canva', 'XAMPP', 'MySQL Workbench', 'Composer', 'Prisma'],
   },
 ];
@@ -52,9 +58,15 @@ export default function Skills() {
 
         <div className="skill-groups">
           {SKILL_GROUPS.map((group) => (
-            <div key={group.categoryKey} className="skill-group glass-card">
+            <div
+              key={group.categoryKey}
+              className="skill-group glass-card"
+              data-category-key={group.categoryKey}
+            >
               <div className="skill-group__header">
-                <span className="skill-group__icon">{group.icon}</span>
+                <span className="skill-group__icon" aria-hidden="true">
+                  <i className={`bi ${group.icon}`} />
+                </span>
                 <h3 className="skill-group__title">{t.categories[group.categoryKey]}</h3>
               </div>
               <div className="skill-group__pills">

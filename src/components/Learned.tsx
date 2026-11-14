@@ -59,6 +59,16 @@ const LEARNINGS_STATIC: LearningStatic[] = [
       </svg>
     ),
   },
+  {
+    index: 5,
+    icon: (
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 16V4" />
+        <path d="m7 9 5-5 5 5" />
+        <path d="M20 16.5a4.5 4.5 0 0 0-3.5-4.4 5 5 0 0 0-9.7 1.4A3.5 3.5 0 0 0 7 20h10a3 3 0 0 0 3-3.5Z" />
+      </svg>
+    ),
+  },
 ];
 
 export default function Learned() {
